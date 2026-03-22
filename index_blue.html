@@ -174,23 +174,22 @@ header.classList.remove("shrink");
 
 /* hamburger */
 
-const toggle=document.querySelector(".menu-toggle");
-const nav=document.querySelector(".nav");
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
 
-toggle.addEventListener("click",()=>{
-nav.classList.toggle("open");
-});
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
 
-const isOpen = nav.classList.contains("open");
-toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  const isOpen = nav.classList.contains("open");
+  toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
 });
 
 /* メニュー内リンクを押したら閉じる（スマホ用） */
 document.querySelectorAll(".nav a").forEach(link => {
-link.addEventListener("click", () => {
-nav.classList.remove("open");
-toggle.setAttribute("aria-expanded", "false");
-});
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
 });
 
 
