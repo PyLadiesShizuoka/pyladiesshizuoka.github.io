@@ -16,6 +16,7 @@
 
 <header class="header">
 <div class="container header-inner">
+
 <div class="logo">
 <a href="index_blue.html">
 <img src="pylady_fujigirl_.png" alt="PyLadies Shizuoka">
@@ -23,11 +24,11 @@
 </a>
 </div>
 
-<button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+<button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
 <i class="fa-solid fa-bars"></i>
 </button>
 
-<nav class="nav" id="site-nav">
+<nav class="nav">
 <ul>
 <li>
 <a href="#about">
@@ -172,19 +173,20 @@ header.classList.remove("shrink");
 }
 });
 
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+const toggle=document.querySelector(".menu-toggle");
+const nav=document.querySelector(".nav");
 
-toggle.addEventListener("click", () => {
+toggle.addEventListener("click",()=>{
 nav.classList.toggle("open");
-const isOpen = nav.classList.contains("open");
-toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+const isOpen=nav.classList.contains("open");
+toggle.setAttribute("aria-expanded",isOpen);
 });
 
-document.querySelectorAll(".nav a").forEach(link => {
-link.addEventListener("click", () => {
+document.querySelectorAll(".nav a").forEach(link=>{
+link.addEventListener("click",()=>{
 nav.classList.remove("open");
-toggle.setAttribute("aria-expanded", "false");
+toggle.setAttribute("aria-expanded","false");
 });
 });
 
