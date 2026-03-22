@@ -16,38 +16,36 @@
 
 <header class="header">
 <div class="container header-inner">
-<div class="logo">
-  <a href="index_blue.html">
-    <img src="pylady_fujigirl_.png" alt="PyLadies Shizuoka">
-    <h2>PyLadies Shizuoka</h2>
-  </a>
+<div class="logo"><a href="index_blue.html">
+<img src="pylady_fujigirl_.png" alt="PyLadies Shizuoka">
+<h2>PyLadies Shizuoka</h2></a>
 </div>
 
-<div class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
-  <i class="fa-solid fa-bars"></i>
-</div>
+<button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+<i class="fa-solid fa-bars"></i>
+</button>
 
-
-<nav class="nav">
+<nav class="nav" id="site-nav">
 <ul>
-<li><a href="#about"><span class="nav-en">About</span></a>
+<li><a href="#about">
+<span class="nav-en">About</span>
 <span class="nav-ja">PyLadies Shizuoka とは</span></a>
 </li>
-<li><a href="#community"><span class="nav-en">Community</span></a>
-<span class="nav-ja">参加者募集中！</span>
+<li><a href="#community">
+<span class="nav-en">Community</span>
+<span class="nav-ja">参加者募集中！</span></a>
 </li>
-<li><a href="#events"><span class="nav-en">Events</span></a>
-<span class="nav-ja">イベント</span>
+<li><a href="#events">
+<span class="nav-en">Events</span>
+<span class="nav-ja">イベント</span></a>
 </li>
-<li><a href="#social"><span class="nav-en">Social Media</span></a>
-<span class="nav-ja">ソーシャルメディア</span>
+<li><a href="#social">
+<span class="nav-en">Social Media</span>
+<span class="nav-ja">ソーシャルメディア</span></a>
 </li>
-<li>
-<a href="coc/coc.html">
-
-<span class="nav-en">Code of Conduct</span></a>
-<span class="nav-ja">行動規範</span>
-
+<li><a href="coc/coc.html">
+<span class="nav-en">Code of Conduct</span>
+<span class="nav-ja">行動規範</span></a>
 </li>
 </ul>
 </nav>
@@ -158,6 +156,7 @@ Copyright PyLadies Shizuoka
 document.getElementById("year").textContent =
 new Date().getFullYear();
 
+
 /* header shrink */
 
 const header = document.querySelector(".header");
@@ -180,6 +179,18 @@ const nav=document.querySelector(".nav");
 
 toggle.addEventListener("click",()=>{
 nav.classList.toggle("open");
+});
+
+const isOpen = nav.classList.contains("open");
+toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+});
+
+/* メニュー内リンクを押したら閉じる（スマホ用） */
+document.querySelectorAll(".nav a").forEach(link => {
+link.addEventListener("click", () => {
+nav.classList.remove("open");
+toggle.setAttribute("aria-expanded", "false");
+});
 });
 
 
