@@ -52,6 +52,7 @@ height: 28px;
 
 .logo {
 flex-shrink: 0;
+min-width: 0;
 }
 
 .logo a {
@@ -60,11 +61,13 @@ align-items: center;
 gap: 10px;
 color: #fff;
 text-decoration: none;
+min-width: 0;
 }
 
 .logo img {
 height: 36px;
 transition: height 0.3s ease;
+flex-shrink: 0;
 }
 
 .logo h2 {
@@ -73,6 +76,7 @@ font-size: 18px;
 font-weight: 700;
 line-height: 1.2;
 color: #fff;
+white-space: nowrap;
 }
 
 /* nav */
@@ -138,6 +142,7 @@ text-align: center;
 .hero h1 {
 margin-bottom: 10px;
 font-size: 42px;
+line-height: 1.15;
 color: #1f5fbf;
 }
 
@@ -156,11 +161,13 @@ margin-bottom: 20px;
 font-size: inherit;
 font-weight: 700;
 color: #1f5fbf;
+line-height: 1.3;
 }
 
 .section.alt h1 {
 margin-bottom: 10px;
 font-size: 42px;
+line-height: 1.15;
 color: #1f5fbf;
 }
 
@@ -186,6 +193,7 @@ padding-left: 20px;
 
 .section li {
 margin-bottom: 10px;
+line-height: 1.7;
 }
 
 /* community */
@@ -252,6 +260,7 @@ background: #1f5fbf;
 color: #fff;
 border-radius: 8px;
 font-weight: 700;
+flex-shrink: 0;
 }
 
 .event-month {
@@ -266,6 +275,7 @@ font-size: 22px;
 .event-title {
 font-size: 16px;
 font-weight: 600;
+line-height: 1.4;
 }
 
 .event-meta {
@@ -353,6 +363,7 @@ border: none;
 color: #fff;
 font-size: 32px;
 cursor: pointer;
+flex-shrink: 0;
 }
 
 .menu-toggle i {
@@ -363,6 +374,7 @@ pointer-events: none;
 
 @media (max-width: 768px) {
 .container {
+max-width: 100%;
 padding: 0 16px;
 }
 
@@ -371,15 +383,23 @@ height: 64px;
 }
 
 .logo a {
+gap: 8px;
 padding: 0;
 }
 
+.logo img {
+height: 30px;
+}
+
 .logo h2 {
-font-size: 16px;
+font-size: clamp(14px, 4.8vw, 20px);
+white-space: nowrap;
 }
 
 .menu-toggle {
 display: block;
+font-size: 36px;
+padding: 6px 8px;
 }
 
 .nav {
@@ -434,7 +454,69 @@ margin-top: 3px;
 text-align: left;
 }
 
+.hero {
+padding-top: 76px;
+padding-bottom: 24px;
+}
+
 .hero h1 {
 font-size: 30px;
+line-height: 1.15;
+}
+
+.section {
+padding: 48px 0;
+}
+
+.section.alt h1 {
+font-size: clamp(28px, 10vw, 42px);
+line-height: 1.15;
+margin-bottom: 8px;
+}
+
+.section p {
+margin-bottom: 16px;
+line-height: 1.7;
+}
+
+.section li {
+margin-bottom: 8px;
+}
+
+.notice {
+margin-top: 28px;
+}
+
+.button {
+width: 100%;
+max-width: 100%;
+padding: 14px 20px;
+}
+
+.sns-links {
+gap: 12px;
+}
+
+.sns-links a {
+width: 100%;
+justify-content: center;
+}
+
+.event-card {
+padding: 16px;
+gap: 12px;
+}
+
+.event-badge {
+width: 60px;
+height: 60px;
+}
+
+.event-day {
+font-size: 20px;
+}
+
+footer {
+padding: 24px 16px;
 }
 }
