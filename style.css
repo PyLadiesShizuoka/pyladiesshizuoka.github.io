@@ -819,3 +819,58 @@ footer {
     padding: 24px 16px;
   }
 }
+
+/* SNSカード（統一版） */
+
+.sns-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 共通カード */
+
+.sns-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #ffffff;
+  border: 2px solid #1f5fbf;
+  color: #1f5fbf;
+  transition: all 0.2s ease;
+}
+
+.sns-card:hover {
+  background: #1f5fbf;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* connpassだけ特別扱い（重要） */
+
+.sns-card.connpass {
+  border: 2px solid #e5481f;
+  color: #e5481f;
+}
+
+.sns-card.connpass:hover {
+  background: #fff5f2;
+  color: #e5481f;
+}
+
+/* ロゴ */
+
+.sns-card img {
+  height: 20px;
+  width: auto;
+}
+
+/* アイコン */
+
+.sns-card i {
+  font-size: 18px;
+}
