@@ -155,7 +155,7 @@ PyLadies JP Slackアカウント申請
 
 <a class="network-card theme-tokyo" href="https://tokyo.pyladies.com/" target="_blank" rel="noopener noreferrer">
 <div class="network-image">
-<img src="images/related/tokyo.jpg" alt="PyLadies Tokyo">
+<img src="tokyo.png" alt="PyLadies Tokyo">
 </div>
 <div class="network-body">
 <h3>PyLadies TOKYO</h3>
@@ -165,7 +165,7 @@ PyLadies JP Slackアカウント申請
 
 <a class="network-card theme-kyoto" href="https://pyladies-kyoto.connpass.com/" target="_blank" rel="noopener noreferrer">
 <div class="network-image">
-<img src="images/related/kyoto.jpg" alt="PyLadies Kyoto">
+<img src="kyoto.png" alt="PyLadies Kyoto">
 </div>
 <div class="network-body">
 <h3>PyLadies KYOTO</h3>
@@ -175,7 +175,7 @@ PyLadies JP Slackアカウント申請
 
 <a class="network-card theme-okinawa" href="https://pyladies-okinawa.connpass.com/" target="_blank" rel="noopener noreferrer">
 <div class="network-image">
-<img src="images/related/okinawa.jpg" alt="PyLadies Okinawa">
+<img src="okinawa.png" alt="PyLadies Okinawa">
 </div>
 <div class="network-body">
 <h3>PyLadies OKINAWA</h3>
@@ -185,7 +185,7 @@ PyLadies JP Slackアカウント申請
 
 <a class="network-card theme-pycon" href="https://www.pycon.jp/index.html" target="_blank" rel="noopener noreferrer">
 <div class="network-image">
-<img src="images/related/pycon.jpg" alt="PyCon JP">
+<img src="pycon.png" alt="PyCon JP">
 </div>
 <div class="network-body">
 <h3>PyCon JP</h3>
@@ -238,28 +238,28 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
-if (window.scrollY > 40) {
-header.classList.add("shrink");
-} else {
-header.classList.remove("shrink");
-}
+  if (window.scrollY > 40) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
 });
 
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 
 toggle.addEventListener("click", () => {
-nav.classList.toggle("open");
+  nav.classList.toggle("open");
 
-const isOpen = nav.classList.contains("open");
-toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  const isOpen = nav.classList.contains("open");
+  toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
 });
 
 document.querySelectorAll(".nav a").forEach(link => {
-link.addEventListener("click", () => {
-nav.classList.remove("open");
-toggle.setAttribute("aria-expanded", "false");
-});
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
 });
 
 const SERIES_ID = 1;
@@ -267,34 +267,34 @@ const SERIES_ID = 1;
 fetch(`https://connpass.com/api/v1/event/?series_id=${SERIES_ID}`)
 .then(res => res.json())
 .then(data => {
-let html = "";
+  let html = "";
 
-data.events.slice(0, 5).forEach(e => {
-const d = new Date(e.started_at);
-const day = d.getDate();
-const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
-const place = e.place || "Online";
-const image = e.logo || "default-event.png";
+  data.events.slice(0, 5).forEach(e => {
+    const d = new Date(e.started_at);
+    const day = d.getDate();
+    const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
+    const place = e.place || "Online";
+    const image = e.logo || "default-event.png";
 
-html += `
+    html += `
 <a class="event-card" href="${e.event_url}" target="_blank" rel="noopener noreferrer">
-<img class="event-image" src="${image}" alt="${e.title}">
-<div class="event-badge">
-<span class="event-month">${month}</span>
-<span class="event-day">${day}</span>
-</div>
-<div>
-<div class="event-title">${e.title}</div>
-<div class="event-meta">📍 ${place}</div>
-</div>
+  <img class="event-image" src="${image}" alt="${e.title}">
+  <div class="event-badge">
+    <span class="event-month">${month}</span>
+    <span class="event-day">${day}</span>
+  </div>
+  <div>
+    <div class="event-title">${e.title}</div>
+    <div class="event-meta">📍 ${place}</div>
+  </div>
 </a>
 `;
-});
+  });
 
-document.getElementById("event-list").innerHTML = html || "現在表示できるイベントがありません。";
+  document.getElementById("event-list").innerHTML = html || "現在表示できるイベントがありません。";
 })
 .catch(() => {
-document.getElementById("event-list").innerHTML = "イベントを取得できませんでした。";
+  document.getElementById("event-list").innerHTML = "イベントを取得できませんでした。";
 });
 </script>
 
