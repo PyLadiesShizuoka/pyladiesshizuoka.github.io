@@ -488,9 +488,18 @@ margin-top: 28px;
 }
 
 .button {
-width: 100%;
+display: inline-flex;
+width: auto;
 max-width: 100%;
 padding: 14px 20px;
+white-space: normal;
+text-align: center;
+line-height: 1.5;
+}
+
+.section .button {
+margin-left: auto;
+margin-right: auto;
 }
 
 .sns-links {
