@@ -10,7 +10,7 @@ background: #f7fbff;
 }
 
 .container {
-max-width: 80%;
+max-width: 1120px;
 margin: 0 auto;
 padding: 0 24px;
 }
@@ -243,7 +243,7 @@ line-height: 1.7;
 /* section heading */
 
 .section-heading {
-margin-bottom: 40px;
+margin-bottom: 32px;
 }
 
 .section-heading-center {
@@ -345,7 +345,7 @@ color: #666;
 /* network */
 
 .network-container {
-max-width: 1100px;
+max-width: 1160px;
 }
 
 .network-lead {
@@ -355,15 +355,16 @@ line-height: 1.8;
 
 .network-grid {
 display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 28px;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+align-items: stretch;
 }
 
 .network-card {
 display: block;
 background: #fff;
 border: 1px solid rgba(31, 95, 191, 0.08);
-border-radius: 20px;
+border-radius: 18px;
 overflow: hidden;
 text-decoration: none;
 color: inherit;
@@ -378,47 +379,45 @@ border-color: rgba(31, 95, 191, 0.18);
 }
 
 .network-image {
-aspect-ratio: 16 / 9;
+aspect-ratio: 360 / 202;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 26px;
+padding: 16px;
 border-bottom: 1px solid rgba(31, 95, 191, 0.06);
 }
 
 .network-image img {
-max-width: 76%;
-max-height: 76%;
+max-width: 72%;
+max-height: 72%;
 object-fit: contain;
 filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.10));
 transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .network-card:hover .network-image img {
-transform: translateY(-2px) scale(1.05);
+transform: translateY(-2px) scale(1.04);
 filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.14));
 }
 
 .network-body {
-padding: 18px 20px 20px;
+padding: 14px 16px 16px;
 text-align: center;
 }
 
 .network-body h3 {
-margin: 0 0 8px;
-font-size: 18px;
+margin: 0 0 6px;
+font-size: 16px;
 line-height: 1.35;
 color: #1f5fbf;
 }
 
 .network-body p {
 margin: 0;
-font-size: 14px;
-line-height: 1.7;
+font-size: 13px;
+line-height: 1.6;
 color: #5f6b7a;
 }
-
-/* theme colors */
 
 .theme-tokyo .network-image {
 background: linear-gradient(180deg, #fff8fb 0%, #fff2f6 100%);
@@ -434,6 +433,10 @@ background: linear-gradient(180deg, #fff7fb 0%, #fff0f6 100%);
 
 .theme-pycon .network-image {
 background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+}
+
+.theme-pyconmini .network-image {
+background: linear-gradient(180deg, #f4fbff 0%, #e7f3ff 100%);
 }
 
 /* social */
@@ -472,8 +475,6 @@ line-height: 1;
 .sns-card i {
 font-size: 18px;
 }
-
-/* connpass */
 
 .connpass-link {
 border-color: #e65425;
@@ -558,6 +559,25 @@ pointer-events: none;
 }
 
 /* responsive */
+
+@media (max-width: 1100px) {
+.container {
+max-width: 100%;
+padding: 0 20px;
+}
+
+.nav ul {
+gap: 24px;
+}
+
+.nav-en {
+font-size: 15px;
+}
+
+.network-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
 
 @media (max-width: 768px) {
 .container {
@@ -795,20 +815,20 @@ text-align: center;
 }
 
 .sns-links {
-display: flex !important;
-flex-direction: column !important;
-align-items: center !important;
-gap: 12px !important;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
 }
 
 .sns-card {
-width: min(100%, 280px) !important;
-min-height: unset !important;
-padding: 10px 16px !important;
+width: min(100%, 280px);
+min-height: unset;
+padding: 10px 16px;
 }
 
 .connpass-link img {
-width: 20px !important;
+width: 20px;
 }
 
 .event-card {
@@ -831,25 +851,25 @@ gap: 18px;
 }
 
 .network-image {
-padding: 20px;
-}
-
-.network-image img {
-max-width: 80%;
-max-height: 80%;
-}
-
-.network-body {
 padding: 16px;
 }
 
+.network-image img {
+max-width: 74%;
+max-height: 74%;
+}
+
+.network-body {
+padding: 14px 14px 16px;
+}
+
 .network-body h3 {
-font-size: 17px;
+font-size: 16px;
 }
 
 .network-body p {
 font-size: 13px;
-line-height: 1.65;
+line-height: 1.6;
 }
 
 footer {
