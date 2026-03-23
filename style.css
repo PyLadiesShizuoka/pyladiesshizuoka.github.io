@@ -157,8 +157,8 @@ background: #eef4ff;
 }
 
 .section-title {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 8px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 8px;
 }
 
 /* heading hierarchy */
@@ -614,7 +614,7 @@ footer {
 padding: 24px 16px;
 }
 
-.page-coc .section.alt:first-of-type {
-padding-top: 110px;
+.page-coc .coc-hero {
+padding-top: 120px;
 }
 }
