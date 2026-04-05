@@ -1,10 +1,18 @@
+---
+layout: post
+title: "PyLadies Shizuoka 立ち上がりました！"
+date: 2026-04-03
+---
+
 # PyLadies Shizuoka 立ち上がりました！
+
+投稿日：{{ page.date | date: "%Y年%m月%d日" }}
 
 2026年3月25日、[PyLadies Shizuoka](https://shizuoka.pyladies.com/) がPyladies本部に承認され、正式に誕生しました。
 
 [connpassページ](https://pyladies-shizuoka.connpass.com/)もあるので、静岡の女性Pythonistaのみなさん　ご参加お待ちしております＾＾
 
-<img src="images/pyladies_shizuoka.png" width="300" height="300">
+<img src="https://shizuoka.pyladies.com/images/pyladies_shizuoka.png" width="300" height="300">
 
 ## PyLadies Shizuoka とは
 - [東京](https://pyladies-tokyo.connpass.com/)・[京都](https://pyladies-kyoto.connpass.com/)・[沖縄](https://pyladies-okinawa.connpass.com/)に次ぐ日本のPyLadies支部です。
