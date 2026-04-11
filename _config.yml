@@ -1,0 +1,9 @@
+title: PyLadies Shizuoka
+description: PyLadies Shizuoka ŒöŽ®ƒTƒCƒg
+url: "https://shizuoka.pyladies.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+timezone: Asia/Tokyo
+lang: ja
