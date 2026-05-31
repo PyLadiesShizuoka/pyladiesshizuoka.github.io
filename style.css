@@ -1135,3 +1135,7 @@ footer {
     max-width: 280px;
   }
 }
+
+.blog-heading h2 {
+  color: var(--primary-color);
+}
