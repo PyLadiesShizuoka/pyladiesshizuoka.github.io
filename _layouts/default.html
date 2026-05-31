@@ -3,45 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
-    {% else %}
-      {{ site.title }}
-    {% endif %}
-  </title>
-
   <meta name="description" content="{{ page.description | default: site.description }}">
 
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="{{ '/images/pyladyfujigirlrbg.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 
 <body>
-
 <header class="header">
   <div class="container header-inner">
-
     <div class="logo">
-      <a href="/">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/images/pylady_fujigirl_.png' | relative_url }}" alt="PyLadies Shizuoka">
         <h2>PyLadies Shizuoka</h2>
       </a>
     </div>
 
-    <button class="menu-toggle" aria-label="メニューを開く">
-      ☰
+    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <i class="fa-solid fa-bars"></i>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="site-nav">
       <ul>
-        <li><a href="/#about"><span class="nav-en">About</span></a></li>
-        <li><a href="/#events"><span class="nav-en">Events</span></a></li>
-        <li><a href="/#network"><span class="nav-en">Network</span></a></li>
-        <li><a href="/#social"><span class="nav-en">Social</span></a></li>
-        <li><a href="/blog/"><span class="nav-en">Blog</span></a></li>
+        <li>
+          <a href="{{ '/' | relative_url }}#about">
+            <span class="nav-en">About</span>
+            <span class="nav-ja">PyLadies Shizuoka とは</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/' | relative_url }}#community">
+            <span class="nav-en">Community</span>
+            <span class="nav-ja">参加者募集中！</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/' | relative_url }}#events">
+            <span class="nav-en">Events</span>
+            <span class="nav-ja">イベント</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/' | relative_url }}#blog-preview">
+            <span class="nav-en">Blog</span>
+            <span class="nav-ja">活動記録</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/' | relative_url }}#social">
+            <span class="nav-en">Social Media</span>
+            <span class="nav-ja">SNS</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/coc/coc.html' | relative_url }}">
+            <span class="nav-en">Code of Conduct</span>
+            <span class="nav-ja">行動規範</span>
+          </a>
+        </li>
       </ul>
     </nav>
-
   </div>
 </header>
 
@@ -50,8 +75,48 @@
 </main>
 
 <footer>
-  <p>© PyLadies Shizuoka</p>
+  <div class="container">
+    <p>Copyright PyLadies Shizuoka <span id="year"></span></p>
+  </div>
 </footer>
+
+<script>
+const year = document.getElementById("year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+const header = document.querySelector(".header");
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
+}
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    const isOpen = nav.classList.contains("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+</script>
+</body>
+</html>
 
 </body>
 </html>
