@@ -8,9 +8,7 @@ permalink: /
 <section class="hero">
   <div class="container">
     <h1>PyLadies Shizuoka</h1>
-    <p>
-      Pythonを学びたい女性・ジェンダーマイノリティのためのコミュニティ
-    </p>
+    <p>Pythonを学びたい女性・ジェンダーマイノリティのためのコミュニティ</p>
   </div>
 </section>
 
@@ -36,9 +34,7 @@ permalink: /
   <div class="container">
     <h2>😊 参加者募集中！</h2>
 
-    <p>
-      本コミュニティではPythonが好きな女性の参加を心待ちにしています。
-    </p>
+    <p>本コミュニティではPythonが好きな女性の参加を心待ちにしています。</p>
 
     <p>
       初心者／熟練者問いません。Pythonでコードを書いたことがない・・・という方でも、Pythonに興味があればお気軽にご参加下さい。（Pythonを用いた初心者向けイベントも行っています）
@@ -72,12 +68,10 @@ permalink: /
 
 <section id="blog-preview" class="section alt">
   <div class="container">
-    <div class="section-heading">
+    <div class="section-heading section-heading-center">
       <p class="section-kicker">Event Reports & Updates</p>
       <h2>Blog</h2>
-      <p class="network-lead">
-        イベントレポートや活動記録を掲載します。
-      </p>
+      <p class="network-lead">イベントレポートや活動記録を掲載します。</p>
     </div>
 
     <div class="blog-list">
@@ -85,16 +79,12 @@ permalink: /
       {% if latest_posts.size > 0 %}
         {% for post in latest_posts %}
           <article class="blog-card">
-            <p class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</p>
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
           </article>
         {% endfor %}
       {% else %}
         <article class="blog-card">
-          <p class="blog-date">準備中</p>
           <h3>ブログはこれから始まります</h3>
-          <p>イベントレポートや活動記録をこちらに掲載していきます。</p>
         </article>
       {% endif %}
     </div>
@@ -110,76 +100,46 @@ permalink: /
     <div class="section-heading section-heading-center">
       <p class="section-kicker">PyLadies and Python Communities</p>
       <h2>PyLadies Network</h2>
-      <p class="network-lead">
-        各地のPyLadiesやPythonコミュニティの活動も、ぜひご覧ください。
-      </p>
+      <p class="network-lead">各地のPyLadiesやPythonコミュニティの活動も、ぜひご覧ください。</p>
     </div>
 
     <div class="network-grid">
       <a class="network-card theme-tokyo" href="https://tokyo.pyladies.com/" target="_blank" rel="noopener noreferrer">
-        <div class="network-image">
-          <img src="/images/tokyo.png" alt="PyLadies Tokyo">
-        </div>
-        <div class="network-body">
-          <h3>PyLadies TOKYO</h3>
-          <p>東京を拠点に活動する PyLadies コミュニティ</p>
-        </div>
+        <div class="network-image"><img src="{{ '/images/tokyo.png' | relative_url }}" alt="PyLadies Tokyo"></div>
+        <div class="network-body"><h3>PyLadies TOKYO</h3><p>東京を拠点に活動する PyLadies コミュニティ</p></div>
       </a>
 
       <a class="network-card theme-kyoto" href="https://pyladies-kyoto.connpass.com/" target="_blank" rel="noopener noreferrer">
-        <div class="network-image">
-          <img src="/images/kyoto.png" alt="PyLadies Kyoto">
-        </div>
-        <div class="network-body">
-          <h3>PyLadies KYOTO</h3>
-          <p>京都エリアのイベント・コミュニティページ</p>
-        </div>
+        <div class="network-image"><img src="{{ '/images/kyoto.png' | relative_url }}" alt="PyLadies Kyoto"></div>
+        <div class="network-body"><h3>PyLadies KYOTO</h3><p>京都エリアのイベント・コミュニティページ</p></div>
       </a>
 
       <a class="network-card theme-okinawa" href="https://pyladies-okinawa.connpass.com/" target="_blank" rel="noopener noreferrer">
-        <div class="network-image">
-          <img src="/images/okinawa.png" alt="PyLadies Okinawa">
-        </div>
-        <div class="network-body">
-          <h3>PyLadies OKINAWA</h3>
-          <p>沖縄エリアのイベント・コミュニティページ</p>
-        </div>
+        <div class="network-image"><img src="{{ '/images/okinawa.png' | relative_url }}" alt="PyLadies Okinawa"></div>
+        <div class="network-body"><h3>PyLadies OKINAWA</h3><p>沖縄エリアのイベント・コミュニティページ</p></div>
       </a>
 
       <a class="network-card theme-pycon" href="https://www.pycon.jp/index.html" target="_blank" rel="noopener noreferrer">
-        <div class="network-image">
-          <img src="/images/pycon.png" alt="PyCon JP">
-        </div>
-        <div class="network-body">
-          <h3>PyCon JP</h3>
-          <p>日本のPythonカンファレンス公式サイト</p>
-        </div>
+        <div class="network-image"><img src="{{ '/images/pycon.png' | relative_url }}" alt="PyCon JP"></div>
+        <div class="network-body"><h3>PyCon JP</h3><p>日本のPythonカンファレンス公式サイト</p></div>
       </a>
 
       <a class="network-card theme-pyconmini" href="https://shizuoka.pycon.jp/" target="_blank" rel="noopener noreferrer">
-        <div class="network-image">
-          <img src="/images/pyconshizu.png" alt="PyCon mini Shizuoka">
-        </div>
-        <div class="network-body">
-          <h3>PyCon mini Shizuoka</h3>
-          <p>静岡地域のPythonコミュニティイベント</p>
-        </div>
+        <div class="network-image"><img src="{{ '/images/pyconshizu.png' | relative_url }}" alt="PyCon mini Shizuoka"></div>
+        <div class="network-body"><h3>PyCon mini Shizuoka</h3><p>静岡地域のPythonコミュニティイベント</p></div>
       </a>
     </div>
   </div>
 </section>
 
-<section id="social" class="section">
+<section id="social" class="section alt">
   <div class="container">
     <h2>Social Media</h2>
-
-    <p>
-      イベント情報や活動は以下で発信しています。
-    </p>
+    <p>イベント情報や活動は以下で発信しています。</p>
 
     <div class="sns-links">
       <a class="sns-card connpass-link" href="https://pyladies-shizuoka.connpass.com/" target="_blank" rel="noopener noreferrer">
-        <img src="/images/connpass.png" alt="connpass">
+        <img src="{{ '/images/connpass.png' | relative_url }}" alt="connpass">
         <span>connpass</span>
       </a>
 
@@ -188,8 +148,9 @@ permalink: /
         <span>GitHub</span>
       </a>
 
-     <a class="sns-card" href="https://x.com/PyLadiesSizuoka" target="_blank" rel="noopener noreferrer">
-	<i class="fa-brands fa-x-twitter"></i>
+      <a class="sns-card" href="https://x.com/PyLadiesSizuoka" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-x-twitter"></i>
+        <span>X</span>
       </a>
 
       <a class="sns-card" href="{{ '/blog/' | relative_url }}">
@@ -201,78 +162,45 @@ permalink: /
 </section>
 
 <script>
-const year = document.getElementById("year");
-if (year) {
-year.textContent = new Date().getFullYear();
-}
-
-const header = document.querySelector(".header");
-
-if (header) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      header.classList.add("shrink");
-    } else {
-      header.classList.remove("shrink");
+fetch("{{ '/events.json' | relative_url }}")
+  .then(res => {
+    if (!res.ok) {
+      throw new Error("events.json could not be loaded");
     }
-  });
-}
+    return res.json();
+  })
+  .then(events => {
+    let html = "";
 
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+    events.forEach(e => {
+      const d = new Date(e.started_at);
+      const day = d.getDate();
+      const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
+      const place = e.place || "Online";
+      const image = e.image ? "{{ '/' | relative_url }}" + e.image : "{{ '/images/event-default.png' | relative_url }}";
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-
-    const isOpen = nav.classList.contains("open");
-    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
-
-  document.querySelectorAll(".nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-fetch("/events.json")
-.then(res => res.json())
-.then(events => {
-let html = "";
-
-events.forEach(e => {
-const d = new Date(e.started_at);
-const day = d.getDate();
-const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
-const place = e.place || "Online";
-const image = e.image ? "/" + e.image : "/images/event-default.jpg";
-
-html += `
+      html += `
 <a class="event-card" href="${e.url}" target="_blank" rel="noopener noreferrer">
-<div class="event-thumb">
-<img class="event-image" src="${image}" alt="${e.title}">
-</div>
-<div class="event-content">
-<div class="event-badge">
-<span class="event-month">${month}</span>
-<span class="event-day">${day}</span>
-</div>
-<div class="event-text">
-<div class="event-title">${e.title}</div>
-<div class="event-meta">📍 ${place}</div>
-</div>
-</div>
+  <div class="event-thumb">
+    <img class="event-image" src="${image}" alt="${e.title}">
+  </div>
+  <div class="event-content">
+    <div class="event-badge">
+      <span class="event-month">${month}</span>
+      <span class="event-day">${day}</span>
+    </div>
+    <div class="event-text">
+      <div class="event-title">${e.title}</div>
+      <div class="event-meta">📍 ${place}</div>
+    </div>
+  </div>
 </a>
 `;
-});
+    });
 
-document.getElementById("event-list").innerHTML =
-html || "現在予定されているイベントはありません。";
-})
-.catch(() => {
-document.getElementById("event-list").innerHTML =
-"現在予定されているイベントはありません。";
-});
+    document.getElementById("event-list").innerHTML = html || "現在予定されているイベントはありません。";
+  })
+  .catch(() => {
+    document.getElementById("event-list").innerHTML = "イベントを取得できませんでした。";
+  });
 </script>
