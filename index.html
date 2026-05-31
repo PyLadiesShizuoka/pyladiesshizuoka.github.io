@@ -67,9 +67,15 @@ permalink: /
 </section>
 
 <section id="blog-preview" class="section alt">
-  <div class="container">      
-      <h2>Blog</h2><p class="section-kicker"> Event Reports & Updates</p>
-      <p class="network-lead">イベントレポートや活動記録を掲載します。</p>
+  <div class="container">
+    <div class="section-heading blog-heading">
+      <h2>
+        Blog
+        <span>～Event Reports & Updates～</span>
+      </h2>
+      <p class="network-lead">
+        イベントレポートや活動記録を掲載します。
+      </p>
     </div>
 
     <div class="blog-list">
@@ -77,15 +83,20 @@ permalink: /
       {% if latest_posts.size > 0 %}
         {% for post in latest_posts %}
           <article class="blog-card">
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <a href="{{ post.url | relative_url }}">
+              <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+              <span class="blog-title">{{ post.title }}</span>
+            </a>
           </article>
         {% endfor %}
-      {% else %}
-        <article class="blog-card">
-          <h3>ブログはこれから始まります</h3>
-        </article>
       {% endif %}
     </div>
+
+    <div class="blog-actions">
+      <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧を見る</a>
+    </div>
+  </div>
+</section>
 
     <div class="blog-actions">
       <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧を見る</a>
