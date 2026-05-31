@@ -2,6 +2,8 @@
 Python community for women and gender minorities in Shizuoka, Japan.
 
 ## 更新履歴
+2026-6-1
+イベント表記部分を更新
 
 2026-4-5
 Jekyllブログ設置に関し、.nojekyll削除
