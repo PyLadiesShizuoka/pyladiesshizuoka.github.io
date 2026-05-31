@@ -6,8 +6,36 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-  {{ content }}
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo">PyLadies Shizuoka</a>
+
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav">
+        <a href="/#about">About</a>
+        <a href="/#events">Events</a>
+        <a href="/#network">Network</a>
+        <a href="/#social">Social</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> PyLadies Shizuoka</p>
+    </div>
+  </footer>
 </body>
 </html>
