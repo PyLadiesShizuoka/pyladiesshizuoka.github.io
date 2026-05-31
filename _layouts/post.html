@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="blog-page">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span>›</span>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <span>›</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+    <article class="blog-article">
+      <p class="blog-article-meta">投稿日：{{ page.date | date: "%Y年%m月%d日" }}</p>
+
+      <h1>{{ page.title }}</h1>
+
+      <div class="blog-article-content">
+        {{ content }}
+      </div>
+    </article>
+
+    <div class="post-nav">
+      <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧へ戻る</a>
+    </div>
+  </div>
+</section>
