@@ -14,7 +14,6 @@ layout: default
 
     <article class="blog-article">
       <p class="blog-article-meta">投稿日：{{ page.date | date: "%Y年%m月%d日" }}</p>
-
       <h1>{{ page.title }}</h1>
 
       <div class="blog-article-content">
@@ -23,7 +22,15 @@ layout: default
     </article>
 
     <div class="post-nav">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}">← 前の記事</a>
+      {% endif %}
+
       <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧へ戻る</a>
+
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}">次の記事 →</a>
+      {% endif %}
     </div>
   </div>
 </section>
