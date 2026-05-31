@@ -962,3 +962,20 @@ footer {
   text-align: left;
   margin: 0 0 28px;
 }
+.network-heading h2 {
+  text-align: left;
+}
+
+.network-heading h2 span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+.network-heading .network-lead {
+  text-align: left;
+  margin: 0 0 28px;
+}
