@@ -941,3 +941,24 @@ footer {
     padding: 24px 16px;
   }
 }
+
+#blog-preview .blog-heading {
+  text-align: left;
+}
+
+#blog-preview .blog-heading h2 {
+  text-align: left;
+}
+
+#blog-preview .blog-heading h2 span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+}
+
+#blog-preview .blog-lead {
+  text-align: left;
+  margin: 0 0 28px;
+}
