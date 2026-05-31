@@ -1,1 +1,36 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
 
+<section class="blog-page">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span>›</span>
+      <span>Blog</span>
+    </nav>
+
+    <div class="section-heading blog-heading">
+      <h2>
+        Blog
+        <span>～Event Reports & Updates～</span>
+      </h2>
+      <p class="blog-lead">
+        イベントレポートや活動記録を掲載します。
+      </p>
+    </div>
+
+    <div class="blog-list">
+      {% for post in site.posts %}
+        <article class="blog-card">
+          <a href="{{ post.url | relative_url }}">
+            <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            <span class="blog-title">{{ post.title }}</span>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
