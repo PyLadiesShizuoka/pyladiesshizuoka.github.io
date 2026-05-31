@@ -67,14 +67,11 @@ permalink: /
 </section>
 
 <section id="blog-preview" class="section alt">
-<div class="section-heading blog-heading">
-  <h2>
-    Blog
-  </h2>
-  <p class="blog-lead">
-    イベントレポートや活動記録を掲載します。
-  </p>
-</div>
+  <div class="container">
+    <div class="section-heading blog-heading">
+      <h2>Blog <span>～Event Reports &amp; Updates～</span></h2>
+      <p class="blog-lead">イベントレポートや活動記録を掲載します。</p>
+    </div>
 
     <div class="blog-list">
       {% assign latest_posts = site.posts | slice: 0, 3 %}
@@ -87,6 +84,10 @@ permalink: /
             </a>
           </article>
         {% endfor %}
+      {% else %}
+        <article class="blog-card">
+          <span class="blog-title">ブログはこれから始まります</span>
+        </article>
       {% endif %}
     </div>
 
@@ -96,14 +97,10 @@ permalink: /
   </div>
 </section>
 
-    <div class="blog-actions">
-      <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧を見る</a>
-    </div>
-  </div>
-</section>
-
 <section id="network" class="section">
-  <div class="container network-container">     
+  <div class="container network-container">
+    <div class="section-heading section-heading-center">
+      <p class="section-kicker">PyLadies and Python Communities</p>
       <h2>PyLadies Network</h2>
       <p class="network-lead">各地のPyLadiesやPythonコミュニティの活動も、ぜひご覧ください。</p>
     </div>
@@ -167,6 +164,40 @@ permalink: /
 </section>
 
 <script>
+const year = document.getElementById("year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+const header = document.querySelector(".header");
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
+}
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    const isOpen = nav.classList.contains("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 fetch("{{ '/events.json' | relative_url }}")
   .then(res => {
     if (!res.ok) {
