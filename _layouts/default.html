@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">
+        <h2>PyLadies Shizuoka</h2>
+      </a>
+    </div>
+
+    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/#about"><span class="nav-en">About</span></a></li>
+        <li><a href="/#events"><span class="nav-en">Events</span></a></li>
+        <li><a href="/#network"><span class="nav-en">Network</span></a></li>
+        <li><a href="/#social"><span class="nav-en">Social</span></a></li>
+        <li><a href="/blog/"><span class="nav-en">Blog</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <body>
   <header class="header">
