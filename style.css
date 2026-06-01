@@ -298,7 +298,97 @@ img {
 }
 
 /* =========================================================
-   04. Community / Notice
+   04. Latest News
+   ========================================================= */
+
+.latest-news {
+  padding: 12px 0 28px;
+  background: #f7fbff;
+}
+
+.latest-news-inner {
+  max-width: 900px;
+}
+
+.latest-news-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.latest-news-heading h2 {
+  margin: 0;
+  color: #1f5fbf;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.latest-news-heading h2 span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+.latest-news-heading a {
+  flex-shrink: 0;
+  color: #1f5fbf;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+}
+
+.latest-news-heading a:hover {
+  opacity: 0.7;
+}
+
+.latest-news-list {
+  margin: 0;
+  padding: 18px 22px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(31, 95, 191, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(31, 95, 191, 0.06);
+}
+
+.latest-news-list li {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  line-height: 1.7;
+}
+
+.latest-news-list li + li {
+  margin-top: 10px;
+}
+
+.latest-news-list time {
+  flex-shrink: 0;
+  color: #5a6f95;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.latest-news-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.latest-news-list a:hover {
+  color: #1f5fbf;
+}
+
+/* =========================================================
+   05. Community / Notice
    ========================================================= */
 
 .notice {
@@ -310,7 +400,7 @@ img {
 }
 
 /* =========================================================
-   05. Events
+   06. Events
    ========================================================= */
 
 #event-list {
@@ -424,7 +514,7 @@ img {
 }
 
 /* =========================================================
-   06. Blog Preview / Blog List
+   07. Blog Preview / Blog List
    ========================================================= */
 
 .blog-heading h2,
@@ -495,7 +585,7 @@ img {
 }
 
 /* =========================================================
-   07. Blog Archive
+   08. Blog Archive
    ========================================================= */
 
 .blog-archive {
@@ -533,7 +623,7 @@ img {
 }
 
 /* =========================================================
-   08. Blog Article Page
+   09. Blog Article Page
    ========================================================= */
 
 .blog-page {
@@ -630,7 +720,7 @@ img {
 }
 
 /* =========================================================
-   09. Network
+   10. Network
    ========================================================= */
 
 .network-container {
@@ -747,7 +837,7 @@ img {
 }
 
 /* =========================================================
-   10. Social
+   11. Social
    ========================================================= */
 
 .sns-links {
@@ -805,7 +895,7 @@ img {
 }
 
 /* =========================================================
-   11. Footer
+   12. Footer
    ========================================================= */
 
 footer {
@@ -817,7 +907,7 @@ footer {
 }
 
 /* =========================================================
-   12. Responsive
+   13. Responsive
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -1031,6 +1121,35 @@ footer {
 
   .notice {
     margin-top: 28px;
+  }
+
+  .latest-news {
+    padding: 10px 0 24px;
+  }
+
+  .latest-news-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .latest-news-heading h2 {
+    font-size: 20px;
+  }
+
+  .latest-news-heading h2 span {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 12px;
+  }
+
+  .latest-news-list {
+    padding: 16px;
+  }
+
+  .latest-news-list li {
+    flex-direction: column;
+    gap: 4px;
   }
 
   .button {
