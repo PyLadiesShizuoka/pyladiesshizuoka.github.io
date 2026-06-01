@@ -223,12 +223,27 @@ fetch("{{ '/events.json' | relative_url }}")
     const featuredEvent = document.getElementById("featured-event");
     if (!featuredEvent) return;
 
-    if (!events || events.length === 0) {
-      featuredEvent.innerHTML = "現在予定されているイベントはありません。";
-      return;
-    }
+   if (!events || events.length === 0) {
+  featuredEvent.innerHTML = "現在予定されているイベントはありません。";
+  return;
+}
 
-    const e = events[0];
+const now = new Date();
+
+const upcomingEvents = events.filter(e => {
+  return new Date(e.started_at) >= now;
+});
+
+if (upcomingEvents.length === 0) {
+  featuredEvent.innerHTML = "現在予定されているイベントはありません。";
+  return;
+}
+
+upcomingEvents.sort((a, b) => {
+  return new Date(a.started_at) - new Date(b.started_at);
+});
+
+const e = upcomingEvents[0];
     const d = new Date(e.started_at);
     const date = d.toLocaleDateString("ja-JP", {
       year: "numeric",
