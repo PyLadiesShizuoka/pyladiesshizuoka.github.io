@@ -1246,3 +1246,33 @@ footer {
     max-width: 280px;
   }
 }
+
+.event-card-simple {
+  padding: 22px 24px;
+}
+
+.event-source {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #e65425;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.event-source img {
+  width: 26px;
+  height: auto;
+}
+
+.event-card-simple .event-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.event-card-simple:hover .event-title {
+  color: #1f5fbf;
+}
