@@ -1331,3 +1331,27 @@ footer {
     padding: 24px 16px;
   }
 }
+
+/* =========================================================
+   Contact
+   ========================================================= */
+
+.contact-heading h2 {
+  color: #1f5fbf;
+  text-align: left;
+}
+
+.contact-heading h2 span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+.contact-lead {
+  text-align: left;
+  margin: 0 0 24px;
+  line-height: 1.8;
+}
