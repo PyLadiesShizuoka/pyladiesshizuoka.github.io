@@ -11,10 +11,14 @@ permalink: /
     <p>Pythonを学びたい女性・ジェンダーマイノリティのためのコミュニティ</p>
   </div>
 </section>
+
 <section class="latest-news">
   <div class="container latest-news-inner">
     <div class="latest-news-heading">
-      <h2>更新履歴</h2>
+      <h2>
+        更新履歴
+        <span>～Latest Updates～</span>
+      </h2>
       <a href="{{ '/blog/' | relative_url }}">もっと見る</a>
     </div>
 
@@ -28,6 +32,22 @@ permalink: /
     </ul>
   </div>
 </section>
+
+<section class="next-event">
+  <div class="container">
+    <div class="section-heading event-heading">
+      <h2>
+        次回イベント
+        <span>～Upcoming Event～</span>
+      </h2>
+    </div>
+
+    <div id="featured-event">
+      読み込み中...
+    </div>
+  </div>
+</section>
+
 <section id="about" class="section">
   <div class="container">
     <h2>PyLadies Shizuoka とは</h2>
@@ -75,18 +95,11 @@ permalink: /
   </div>
 </section>
 
-<section id="events" class="section">
-  <div class="container">
-    <h2>Events</h2>
-    <div id="event-list">読み込み中...</div>
-  </div>
-</section>
-
 <section id="blog-preview" class="section alt">
   <div class="container">
     <div class="section-heading blog-heading">
       <h2>Blog <span>～Event Reports &amp; Updates～</span></h2>
-      <p class="blog-lead">イベントレポートや活動記録を掲載します。</p>
+      <p class="blog-lead">ミートアップ開催レポートやコミュニティ活動の記録を掲載しています。</p>
     </div>
 
     <div class="blog-list">
@@ -115,15 +128,15 @@ permalink: /
 
 <section id="network" class="section">
   <div class="container network-container">
-      <div class="section-heading network-heading">
-  <h2>
-    PyLadies Network
-    <span>～PyLadies and Python Communities～</span>
-  </h2>
+    <div class="section-heading network-heading">
+      <h2>
+        PyLadies Network
+        <span>～PyLadies and Python Communities～</span>
+      </h2>
 
-  <p class="network-lead">
-    各地のPyLadiesやPythonコミュニティの活動も、ぜひご覧ください。
-  </p>
+      <p class="network-lead">
+        各地のPyLadiesやPythonコミュニティの活動も、ぜひご覧ください。
+      </p>
     </div>
 
     <div class="network-grid">
@@ -187,35 +200,58 @@ permalink: /
 fetch("{{ '/events.json' | relative_url }}")
   .then(res => res.json())
   .then(events => {
-    let html = "";
+    const featuredEvent = document.getElementById("featured-event");
 
-    events.forEach(e => {
-      const d = new Date(e.started_at);
-      const date = d.toLocaleDateString("ja-JP", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit"
-      }).replaceAll("/", ".");
+    if (!featuredEvent) return;
 
-      const place = e.place || "Online";
+    if (!events || events.length === 0) {
+      featuredEvent.innerHTML = "現在予定されているイベントはありません。";
+      return;
+    }
 
-      html += `
-<a class="event-card event-card-simple" href="${e.url}" target="_blank" rel="noopener noreferrer">
-  <div class="event-source">
-    <img src="{{ '/images/connpass.png' | relative_url }}" alt="connpass">
-    <span>connpass</span>
-  </div>
-  <div class="event-title">${e.title}</div>
-  <div class="event-meta">${date} / ${place}</div>
-</a>
-`;
-    });
+    const e = events[0];
+    const d = new Date(e.started_at);
+    const date = d.toLocaleDateString("ja-JP", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).replaceAll("/", ".");
 
-    document.getElementById("event-list").innerHTML =
-      html || "現在予定されているイベントはありません。";
+    const place = e.place || "Online";
+
+    featuredEvent.innerHTML = `
+      <div class="featured-event-card">
+        <div class="featured-event-source">
+          <img src="{{ '/images/connpass.png' | relative_url }}" alt="connpass">
+          <span>connpass</span>
+        </div>
+
+        <div class="featured-event-title">
+          ${e.title}
+        </div>
+
+        <div class="featured-event-date">
+          ${date}
+        </div>
+
+        <div class="featured-event-place">
+          ${place}
+        </div>
+
+        <a class="button featured-event-button"
+           href="${e.url}"
+           target="_blank"
+           rel="noopener noreferrer">
+          イベント詳細を見る
+        </a>
+      </div>
+    `;
   })
   .catch(() => {
-    document.getElementById("event-list").innerHTML =
-      "イベントを取得できませんでした。";
+    const featuredEvent = document.getElementById("featured-event");
+
+    if (featuredEvent) {
+      featuredEvent.innerHTML = "イベントを取得できませんでした。";
+    }
   });
 </script>
