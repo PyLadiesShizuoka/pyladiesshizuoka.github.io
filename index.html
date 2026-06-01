@@ -11,7 +11,23 @@ permalink: /
     <p>Pythonを学びたい女性・ジェンダーマイノリティのためのコミュニティ</p>
   </div>
 </section>
+<section class="latest-news">
+  <div class="container latest-news-inner">
+    <div class="latest-news-heading">
+      <h2>更新履歴</h2>
+      <a href="{{ '/blog/' | relative_url }}">もっと見る</a>
+    </div>
 
+    <ul class="latest-news-list">
+      {% for post in site.posts limit:2 %}
+        <li>
+          <time>{{ post.date | date: "%Y.%m.%d" }}</time>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 <section id="about" class="section">
   <div class="container">
     <h2>PyLadies Shizuoka とは</h2>
