@@ -6,7 +6,7 @@ date: 2026-04-03
 
 2026年3月25日、[PyLadies Shizuoka](https://shizuoka.pyladies.com/) がPyLadies本部に承認され、正式に誕生しました。
 
-[connpassページ](https://pyladies-shizuoka.connpass.com/)もあるので、静岡の女性Pythonistaのみなさん、ご参加お待ちしております。
+[connpassページ](https://pyladies-shizuoka.connpass.com/)もあるので、静岡の女性Pythonistaの（= Python利用者）みなさん、ご参加お待ちしております。
 
 ![PyLadies Shizuoka ロゴ](/images/pyladies_shizuoka.png)
 
