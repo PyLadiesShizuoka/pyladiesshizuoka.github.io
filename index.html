@@ -231,7 +231,8 @@ fetch("{{ '/events.json' | relative_url }}")
 const now = new Date();
 
 const upcomingEvents = events.filter(e => {
-  return new Date(e.started_at) >= now;
+  const endTime = e.ended_at || e.started_at;
+  return new Date(endTime) >= now;
 });
 
 if (upcomingEvents.length === 0) {
