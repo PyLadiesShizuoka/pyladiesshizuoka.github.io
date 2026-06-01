@@ -1355,3 +1355,210 @@ footer {
   margin: 0 0 24px;
   line-height: 1.8;
 }
+
+
+/* =========================================================
+   14. Final Layout Adjustments
+   - Section alternation
+   - Latest News / Next Event alignment
+   - Contact section
+   ========================================================= */
+
+/* Section color order on top page:
+   Hero / Latest News: light
+   Next Event: alt
+   About: light
+   Community: alt
+   Blog: light
+   Network: alt
+   Social: light
+   Contact: alt
+*/
+.latest-news,
+#about,
+#blog-preview,
+#social {
+  background: #f7fbff;
+}
+
+.next-event,
+#community,
+#network,
+#contact {
+  background: #eef4ff;
+}
+
+/* Keep latest news and next event perfectly aligned */
+.latest-news-inner,
+.next-event-inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make latest news and next event headings the same scale */
+.latest-news-heading,
+.next-event-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.latest-news-heading h2,
+.next-event-heading h2 {
+  margin: 0;
+  color: #1f5fbf;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.latest-news-heading h2 span,
+.next-event-heading h2 span {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+/* Make the two cards the same width and visual weight */
+.latest-news-list,
+.featured-event-card {
+  width: 100%;
+  margin: 0;
+  padding: 18px 22px;
+  background: #fff;
+  border: 1px solid rgba(31, 95, 191, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(31, 95, 191, 0.06);
+}
+
+/* Next event should be compact, close to latest-news card */
+.next-event {
+  padding: 24px 0 56px;
+}
+
+.featured-event-card {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.featured-event-card:hover {
+  border-color: rgba(31, 95, 191, 0.28);
+}
+
+.featured-event-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #e65425;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.featured-event-source img {
+  width: 24px;
+  height: auto;
+  display: block;
+}
+
+.featured-event-title {
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.featured-event-card:hover .featured-event-title {
+  color: #1f5fbf;
+}
+
+.featured-event-meta {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* If older HTML still has date/place as separate elements, show them on one line. */
+.featured-event-date,
+.featured-event-place {
+  display: inline;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.featured-event-place::before {
+  content: " / ";
+}
+
+/* If older HTML still has a button, hide it because the event title/card is the link. */
+.featured-event-button {
+  display: none;
+}
+
+/* Contact */
+.contact-heading h2 {
+  color: #1f5fbf;
+  text-align: left;
+}
+
+.contact-heading h2 span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a6f95;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+.contact-lead {
+  text-align: left;
+  margin: 0 0 24px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .latest-news-heading,
+  .next-event-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .latest-news-heading h2,
+  .next-event-heading h2 {
+    font-size: 20px;
+  }
+
+  .latest-news-heading h2 span,
+  .next-event-heading h2 span,
+  .contact-heading h2 span {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 12px;
+  }
+
+  .latest-news-list,
+  .featured-event-card {
+    padding: 16px;
+  }
+
+  .next-event {
+    padding: 24px 0 44px;
+  }
+
+  .featured-event-title {
+    font-size: 16px;
+  }
+}
+
