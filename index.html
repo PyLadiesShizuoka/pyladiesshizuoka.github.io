@@ -168,79 +168,38 @@ permalink: /
 </section>
 
 <script>
-const year = document.getElementById("year");
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
-const header = document.querySelector(".header");
-if (header) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      header.classList.add("shrink");
-    } else {
-      header.classList.remove("shrink");
-    }
-  });
-}
-
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
-
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    const isOpen = nav.classList.contains("open");
-    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
-
-  document.querySelectorAll(".nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
 fetch("{{ '/events.json' | relative_url }}")
-  .then(res => {
-    if (!res.ok) {
-      throw new Error("events.json could not be loaded");
-    }
-    return res.json();
-  })
+  .then(res => res.json())
   .then(events => {
     let html = "";
 
     events.forEach(e => {
       const d = new Date(e.started_at);
-      const day = d.getDate();
-      const month = d.toLocaleString("en-US", { month: "short" }).toUpperCase();
+      const date = d.toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).replaceAll("/", ".");
+
       const place = e.place || "Online";
-      const image = e.image ? "{{ '/' | relative_url }}" + e.image : "{{ '/images/event-default.png' | relative_url }}";
 
       html += `
-<a class="event-card" href="${e.url}" target="_blank" rel="noopener noreferrer">
-  <div class="event-thumb">
-    <img class="event-image" src="${image}" alt="${e.title}">
+<a class="event-card event-card-simple" href="${e.url}" target="_blank" rel="noopener noreferrer">
+  <div class="event-source">
+    <img src="{{ '/images/connpass.png' | relative_url }}" alt="connpass">
+    <span>connpass</span>
   </div>
-  <div class="event-content">
-    <div class="event-badge">
-      <span class="event-month">${month}</span>
-      <span class="event-day">${day}</span>
-    </div>
-    <div class="event-text">
-      <div class="event-title">${e.title}</div>
-      <div class="event-meta">📍 ${place}</div>
-    </div>
-  </div>
+  <div class="event-title">${e.title}</div>
+  <div class="event-meta">${date} / ${place}</div>
 </a>
 `;
     });
 
-    document.getElementById("event-list").innerHTML = html || "現在予定されているイベントはありません。";
+    document.getElementById("event-list").innerHTML =
+      html || "現在予定されているイベントはありません。";
   })
   .catch(() => {
-    document.getElementById("event-list").innerHTML = "イベントを取得できませんでした。";
+    document.getElementById("event-list").innerHTML =
+      "イベントを取得できませんでした。";
   });
 </script>
