@@ -5,18 +5,15 @@ date: 2026-05-23
 ---
 
 connpassにて、PyLadies Shizuoka初のイベントとなる「[PyLadies Shizuoka Meetup #1 Welcome Day](https://pyladies-shizuoka.connpass.com/event/392236/)」を公開しました。
-<br><br>
 
 ![event0711](/images/blog/event0711.png)
-<br><br>
 
 今回は「Pythonに興味はあるけれど、まだ触ったことがない」という方にも気軽に参加していただけるよう、超初心者向けの内容を企画しました。
 
 プログラミング学習で最初の壁になりやすい環境構築は行わず、Google Colabを利用してPythonを体験していただきます。ブラウザ上で動作するため、事前にPythonをインストールする必要はありません。
-<br><br>
 
 当日は講師と一緒に手を動かしながら、ゆっくりと進めていきます。
-<br><br>
+<br>
 
 「プログラムってこうやって動くんだ！」<br>
 「Pythonって意外と難しくないかも！」<br>
@@ -25,9 +22,7 @@ connpassにて、PyLadies Shizuoka初のイベントとなる「[PyLadies Shizuo
 
 また、PyLadiesは学習だけでなく交流も大切にしています。初心者から経験者まで、さまざまな分野やバックグラウンドを持つ方々との交流も楽しんでいただければと思います。
 
-PyLadies Shizuokaとして初めてのイベントになります。皆さまとお会いできることを楽しみにしています。
-
-ご参加をお待ちしております！
+PyLadies Shizuokaとして初めてのイベントになります。皆さまとお会いできることを楽しみにしています。ご参加お待ちしております！
 
 ## イベント詳細
 
