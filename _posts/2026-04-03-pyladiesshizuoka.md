@@ -19,5 +19,7 @@ date: 2026-04-03
 ## Slackへのお誘い
 
 PyLadies ShizuokaではチャットツールSlackを使ってメンバー同士コミュニケーションをとっています。
+PyLadies Shizuokaの活動に興味のある方は、この機会にぜひSlackチームに参加してみませんか？ 
+PyLadies Shizuokaだけではなく、東京をはじめ、日本全国の女性Pythonistaとコミュニケーションを取ることも出来ます！
 
 [Slackアカウント申請 – PyLadies Japan](https://docs.google.com/forms/d/e/1FAIpQLSelRdBGus7o6MsijTZiTt1kFAoFYQlwYgrBPQOrGVwGlAmHNg/viewform)
