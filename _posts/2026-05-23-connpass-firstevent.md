@@ -4,8 +4,6 @@ title: "初回イベントを公開しました！"
 date: 2026-05-23
 ---
 
-# 初回イベントを公開しました！
-
 connpassにて、PyLadies Shizuoka初のイベントとなる「[PyLadies Shizuoka Meetup #1 Welcome Day](https://pyladies-shizuoka.connpass.com/event/392236/)」を公開しました。
 
 
