@@ -33,7 +33,7 @@ PyLadies Shizuokaとして初めてのイベントになります。皆さまと
 - 日時：2026年7月11日（土）
 - 会場：静岡市コ・クリエーションスペース
 - 参加対象：女性・ジェンダーマイノリティの方
-- イベントページ：[https://pyladies-shizuoka.connpass,com/event/392236/](https://pyladies-shizuoka.connpass.com/event/392236/)
+- イベントページ：[https://pyladies-shizuoka.connpass.com/event/392236/](https://pyladies-shizuoka.connpass.com/event/392236/)
 ---
 ## Slackへのお誘い
 
