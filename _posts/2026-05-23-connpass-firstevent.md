@@ -6,7 +6,7 @@ date: 2026-05-23
 
 connpassにて、PyLadies Shizuoka初のイベントとなる「[PyLadies Shizuoka Meetup #1 Welcome Day](https://pyladies-shizuoka.connpass.com/event/392236/)」を公開しました。
 
-![PyLadies Shizuoka Meetup #1 Welcome Day](/images/blog/event20260711.png)
+![PyLadies Shizuoka Meetup #1 Welcome Day](/images/blog/event0711.png)
 
 
 
@@ -33,8 +33,7 @@ PyLadies Shizuokaとして初めてのイベントになります。皆さまと
 - 日時：2026年7月11日（土）
 - 会場：静岡市コ・クリエーションスペース
 - 参加対象：女性・ジェンダーマイノリティの方
-- イベントページ：https://pyladies-shizuoka.connpass.com/event/392236/
-
+- イベントページ：[https://pyladies-shizuoka.connpass,com/event/392236/](https://pyladies-shizuoka.connpass.com/event/392236/)
 ---
 ## Slackへのお誘い
 
