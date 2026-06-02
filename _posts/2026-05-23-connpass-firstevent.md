@@ -7,7 +7,7 @@ date: 2026-05-23
 connpassにて、PyLadies Shizuoka初のイベントとなる「[PyLadies Shizuoka Meetup #1 Welcome Day](https://pyladies-shizuoka.connpass.com/event/392236/)」を公開しました。
 <br><br>
 
-[event0711](/images/blog/event0711.png)
+![event0711](/images/blog/event0711.png)
 <br><br>
 
 今回は「Pythonに興味はあるけれど、まだ触ったことがない」という方にも気軽に参加していただけるよう、超初心者向けの内容を企画しました。
