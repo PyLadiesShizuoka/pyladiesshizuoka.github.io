@@ -23,7 +23,11 @@ permalink: /blog/
           <ul>
             {% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%m'" %}
             {% for month in posts_by_month %}
-              <li>{{ month.name }}月（{{ month.items.size }}）</li>
+              <li>
+                <a href="#archive-{{ year.name }}-{{ month.name }}">
+                  {{ month.name }}月（{{ month.items.size }}）
+                </a>
+              </li>
             {% endfor %}
           </ul>
         </details>
@@ -33,21 +37,33 @@ permalink: /blog/
     <div class="section-heading blog-heading">
       <h2>
         Blog
-        <span>～Event Reports & Updates～</span>
+        <span>～Event Reports &amp; Updates～</span>
       </h2>
       <p class="blog-lead">
         イベントレポートや活動記録を掲載します。
       </p>
     </div>
 
-    <div class="blog-list">
-      {% for post in site.posts %}
-        <article class="blog-card">
-          <a href="{{ post.url | relative_url }}">
-            <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
-            <span class="blog-title">{{ post.title }}</span>
-          </a>
-        </article>
+    <div class="blog-month-list">
+      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in posts_by_year %}
+        {% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%m'" %}
+        {% for month in posts_by_month %}
+          <section class="blog-month-section" id="archive-{{ year.name }}-{{ month.name }}">
+            <h3>{{ year.name }}年{{ month.name }}月</h3>
+
+            <div class="blog-list">
+              {% for post in month.items %}
+                <article class="blog-card">
+                  <a href="{{ post.url | relative_url }}">
+                    <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+                    <span class="blog-title">{{ post.title }}</span>
+                  </a>
+                </article>
+              {% endfor %}
+            </div>
+          </section>
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
