@@ -33,8 +33,6 @@ Welcome Dayは、
 
 今回はGoogle Colabを利用し、事前の環境構築がなくてもPythonを体験できる内容にしました。
 
-![サムネイル](/images/blog/711welcomeday2.jpg)![サムネイル](/images/blog/711welcomeday4.jpg)
-
 ---
 
 ## 当日のプログラム
@@ -49,7 +47,7 @@ Welcome Dayは、
 
 自己紹介では、参加したきっかけやPythonを始めた理由などをお話しいただき、会場の緊張も少しずつほぐれていきました。
 
-![サムネイル](/images/blog/711welcomeday2.jpg)![サムネイル](/images/blog/711welcomeday4.jpg)
+![サムネイル](/images/blog/711welcomeday4.jpg)
 
 ---
 
