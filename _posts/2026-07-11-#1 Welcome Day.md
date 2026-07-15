@@ -10,8 +10,6 @@ tags:
   - Python
 ---
 
-# PyLadies Shizuoka Meetup #1 Welcome Day を開催しました！
-
 2026年7月11日（土）、静岡市コ・クリエーションスペースにて、**PyLadies Shizuoka Meetup #1 Welcome Day** を開催しました。
 
 PyLadies Shizuokaとして初めてのイベントでしたが、多くの方にご参加いただき、和やかな雰囲気の中で無事に終えることができました。
