@@ -644,8 +644,8 @@ img {
   text-align: center;
 }
 
-h2 {
-    scroll-margin-top: 200px;
+.post-content h2[id] {
+  scroll-margin-top: 100px;
 }
 
 /* =========================================================
