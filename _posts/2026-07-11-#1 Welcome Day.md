@@ -23,7 +23,7 @@ PyLadies Shizuokaとして初めてのイベントでしたが、多くの方に
 
 ## Welcome Dayとは？
 
-Welcome Dayは、
+Welcome Dayは、PyLadies Shizuokaの初回イベントで、「初めまして」や「ようこそ」の意味もありつつ
 
 - Pythonに興味はあるけれど何から始めればいいかわからない
 - 久しぶりにPythonを触ってみたい
