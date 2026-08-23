@@ -12,7 +12,7 @@ PyLadies Shizuokaの公式サイトでは、各地のPyLadiesやPythonコミュ�
 ## PyLadies Fukuoka
 
 福岡エリアで活動するPyLadiesコミュニティです。
-イベントなどの最新情報は、PyLadies Fukuokaのconnpassページからご覧いただけます。<br>
+イベントなどの最新情報は、PyLadies Fukuokaのconnpassページからご覧いただけます。<br><br>
 **[PyLadies Fukuoka - connpass](https://pyladies-fukuoka.connpass.com/)**
 <br><br>
 静岡と福岡、距離は離れていますが、同じPyLadiesの仲間として、これから地域を越えて交流していけることを楽しみにしています！😊🐍
