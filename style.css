@@ -928,6 +928,10 @@ img {
   background: linear-gradient(180deg, #fff7fb 0%, #fff0f6 100%);
 }
 
+.theme-fukuoka .network-image {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+}
+
 .theme-pycon .network-image {
   background: linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
 }
