@@ -7,7 +7,7 @@ date: 2026-08-24
 福岡を拠点とする PyLadies Fukuoka のconnpassページがオープンしました！🎉🐍
 <br>
 PyLadies Shizuokaの公式サイトでは、各地のPyLadiesやPythonコミュニティを紹介する [**「PyLadies Network」**](http://shizuoka.pyladies.com/#network)を掲載しています。<br><br>
-今回、PyLadies Fukuokaの主催者の方に許可をいただき、新たに PyLadies Fukuoka をNetworkへ追加しました！<br>
+今回、PyLadies Fukuokaの主宰者の方に許可をいただき、新たに PyLadies Fukuoka をNetworkへ追加しました！<br>
 
 ## PyLadies Fukuoka
 
