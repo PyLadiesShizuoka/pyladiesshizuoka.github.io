@@ -3,7 +3,7 @@ layout: post
 title: "第二回イベントを公開しました！"
 date: 2026-08-13
 ---
-<b>2026/8/26 好評につき、定員を10名へ増枠しました</b><br><br>
+**2026年8月26日追記：好評につき、定員を10名へ増枠しました！**<br><br>
 connpassにて、2回目のイベントとなる「[PyLadies Shizuoka Meetup #2 Code & Connect](https://pyladies-shizuoka.connpass.com/event/401156/)」を公開しました。
 
 ![event0913](/images/blog/event0913.png)
@@ -18,7 +18,7 @@ connpassにて、2回目のイベントとなる「[PyLadies Shizuoka Meetup #2 
 - 会場：静岡県男女共同参画センター「あざれあ」研修室3
 - 参加対象：女性・ジェンダーマイノリティの方
 - 参加費：無料
-- 定員：~~5名~~　→　10名（好評につき、定員を10名へ増枠しました）
+- 定員：~~5名~~ → **10名**（好評につき増枠しました）
 - イベントページ：[https://pyladies-shizuoka.connpass.com/event/401156/](https://pyladies-shizuoka.connpass.com/event/401156/)
 
 ## もくもく会とは
