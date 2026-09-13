@@ -34,7 +34,7 @@ date: 2026-08-26
 - **会場：** 静岡市女性会館「あざれあ」研修室3
 - **定員：** 5名から10名へ増枠
 
-参加申し込みと詳しい内容は、[connpassのイベントページ PyLadies Shizuoka #2 Code & Connect](https://pyladies-shizuoka.connpass.com/event/401156/)をご覧ください。
+参加申し込みと詳しい内容は、connpassのイベントページ [PyLadies Shizuoka #2 Code & Connect](https://pyladies-shizuoka.connpass.com/event/401156/)をご覧ください。
 
 
 ---
