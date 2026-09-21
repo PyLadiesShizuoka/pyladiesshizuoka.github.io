@@ -107,22 +107,27 @@ permalink: /
     </div>
 
     <div class="blog-list">
-      {% assign latest_posts = site.posts | slice: 0, 3 %}
-      {% if latest_posts.size > 0 %}
-        {% for post in latest_posts %}
-          <article class="blog-card">
-            <a href="{{ post.url | relative_url }}">
-              <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
-              <span class="blog-title">{{ post.title }}</span>
-            </a>
-          </article>
-        {% endfor %}
-      {% else %}
-        <article class="blog-card">
-          <span class="blog-title">ブログはこれから始まります</span>
-        </article>
-      {% endif %}
-    </div>
+  {% assign latest_posts = site.posts | slice: 0, 3 %}
+  {% if latest_posts.size > 0 %}
+    {% for post in latest_posts %}
+      <article class="blog-card">
+        <a href="{{ post.url | relative_url }}">
+          <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+
+          {% if forloop.first %}
+            <span class="new-label">NEW!</span>
+          {% endif %}
+
+          <span class="blog-title">{{ post.title }}</span>
+        </a>
+      </article>
+    {% endfor %}
+  {% else %}
+    <article class="blog-card">
+      <span class="blog-title">ブログはこれから始まります</span>
+    </article>
+  {% endif %}
+</div>
 
     <div class="blog-actions">
       <a class="button" href="{{ '/blog/' | relative_url }}">ブログ一覧を見る</a>
