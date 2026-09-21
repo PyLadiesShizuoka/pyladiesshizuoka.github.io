@@ -1,96 +1,330 @@
 ---
-layout: default
-title: プライバシーポリシー
 ---
+<!DOCTYPE html>
+<html lang="ja">
 
-<section class="blog-page">
-  <div class="container">
-    <h1>プライバシーポリシー</h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>
-      PyLadies Shizuoka（以下「当コミュニティ」といいます）は、
-      当ウェブサイトにおける利用者の情報について、以下のとおり取り扱います。
-    </p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <h2>アクセス解析ツールについて</h2>
+<meta name="description" content="PyLadies Shizuoka公式サイトのプライバシーポリシーです。">
+<title>プライバシーポリシー | PyLadies Shizuoka</title>
 
-    <p>
-      当ウェブサイトでは、サイトの利用状況を把握し、内容や情報発信の改善に役立てるため、
-      Google LLCが提供するアクセス解析サービス「Google Analytics」を利用しています。
-    </p>
+<link rel="icon" href="../images/pyladyfujigirlrbg.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" href="../images/favicon-32x32.png">
 
-    <p>
-      Google Analyticsは、Cookieなどを使用して、閲覧したページ、利用環境、
-      おおよその地域、当ウェブサイトへの流入元などの情報を収集します。
-      これらの情報は、特定の個人を直接識別することを目的としたものではありません。
-    </p>
+<link rel="stylesheet" href="../style.css">
 
-    <p>
-      Googleによる情報の取り扱いについては、以下のページをご確認ください。
-    </p>
+{% include google-analytics.html %}
+</head>
 
-    <ul>
-      <li>
-        <a href="https://policies.google.com/technologies/partner-sites?hl=ja"
-           target="_blank" rel="noopener noreferrer">
-          Googleのサービスを使用するサイトやアプリから収集した情報の使用
-        </a>
-      </li>
-      <li>
-        <a href="https://policies.google.com/privacy?hl=ja"
-           target="_blank" rel="noopener noreferrer">
-          Googleプライバシーポリシー
-        </a>
-      </li>
-      <li>
-        <a href="https://marketingplatform.google.com/about/analytics/terms/jp/"
-           target="_blank" rel="noopener noreferrer">
-          Google Analytics利用規約
-        </a>
-      </li>
-    </ul>
+<body class="page-coc page-privacy">
 
-    <p>
-      Cookieは、利用者がブラウザの設定を変更することで無効にできます。
-      また、Googleが提供する
-      <a href="https://tools.google.com/dlpage/gaoptout?hl=ja"
-         target="_blank" rel="noopener noreferrer">
-        Google Analyticsオプトアウトアドオン
-      </a>
-      を利用することで、Google Analyticsによる情報収集を停止できます。
-    </p>
+<header class="header">
+<div class="container header-inner">
 
-    <h2>お問い合わせで取得する情報について</h2>
+<div class="logo">
+<a href="../index.html">
+<img src="../images/pylady_fujigirl_.png" alt="PyLadies Shizuoka">
+<h2>PyLadies Shizuoka</h2>
+</a>
+</div>
 
-    <p>
-      当コミュニティは、お問い合わせフォームなどを通じて、
-      氏名、メールアドレス、お問い合わせ内容などの情報を取得する場合があります。
-      取得した情報は、お問い合わせへの回答や必要な連絡のために使用し、
-      法令に基づく場合を除き、本人の同意なく第三者へ提供しません。
-    </p>
+<button
+  class="menu-toggle"
+  aria-label="メニューを開く"
+  aria-expanded="false"
+  aria-controls="site-nav">
+  <i class="fa-solid fa-bars"></i>
+</button>
 
-    <h2>外部サービスへのリンクについて</h2>
+<nav class="nav" id="site-nav">
+<ul>
+  <li>
+    <a href="../index.html#about">
+      <span class="nav-en">About</span>
+      <span class="nav-ja">PyLadies Shizuoka とは</span>
+    </a>
+  </li>
 
-    <p>
-      当ウェブサイトには、connpass、X、Googleフォームなどの外部サービスへのリンクが含まれています。
-      外部サービスにおける情報の取り扱いについては、それぞれのサービスが定める
-      プライバシーポリシーをご確認ください。
-    </p>
+  <li>
+    <a href="../index.html#events">
+      <span class="nav-en">Events</span>
+      <span class="nav-ja">イベント</span>
+    </a>
+  </li>
 
-    <h2>プライバシーポリシーの変更</h2>
+  <li>
+    <a href="../index.html#blog-preview">
+      <span class="nav-en">Blog</span>
+      <span class="nav-ja">活動記録</span>
+    </a>
+  </li>
 
-    <p>
-      当コミュニティは、必要に応じて本プライバシーポリシーを変更することがあります。
-      変更後の内容は、当ウェブサイトに掲載した時点から適用されます。
-    </p>
+  <li>
+    <a href="../index.html#network">
+      <span class="nav-en">Network</span>
+      <span class="nav-ja">関連コミュニティ</span>
+    </a>
+  </li>
 
-    <h2>お問い合わせ</h2>
+  <li>
+    <a href="../index.html#social">
+      <span class="nav-en">Social</span>
+      <span class="nav-ja">SNS</span>
+    </a>
+  </li>
 
-    <p>
-      本プライバシーポリシーに関するお問い合わせは、
-      当ウェブサイトの[お問い合わせフォーム](https://shizuoka.pyladies.com/#contact)よりご連絡ください。
-    </p>
+  <li>
+    <a href="../index.html#contact">
+      <span class="nav-en">Contact</span>
+      <span class="nav-ja">お問い合わせ</span>
+    </a>
+  </li>
 
-    <p>制定日：2026年9月21日</p>
-  </div>
+  <li>
+    <a href="../coc/coc.html">
+      <span class="nav-en">CoC</span>
+      <span class="nav-ja">行動規範</span>
+    </a>
+  </li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="hero coc-hero">
+<div class="container">
+<h1>Privacy Policy</h1>
+<p>PyLadies Shizuoka プライバシーポリシー</p>
+</div>
 </section>
+
+<section class="section">
+<div class="container">
+
+<p>
+PyLadies Shizuoka（以下「当コミュニティ」といいます）は、
+当ウェブサイトにおける利用者の情報について、以下のとおり取り扱います。
+</p>
+
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-chart-line"></i>
+  アクセス解析ツールについて
+</h2>
+
+<p>
+当ウェブサイトでは、サイトの利用状況を把握し、内容や情報発信の改善に役立てるため、
+Google LLCが提供するアクセス解析サービス「Google Analytics」を利用しています。
+</p>
+
+<p>
+Google Analyticsは、Cookieなどを使用して、閲覧したページ、利用環境、
+おおよその地域、当ウェブサイトへの流入元などの情報を収集します。
+これらの情報は、特定の個人を直接識別することを目的としたものではありません。
+</p>
+
+<p>
+Googleによる情報の取り扱いについては、以下のページをご確認ください。
+</p>
+
+<ul>
+  <li>
+    <a
+      href="https://policies.google.com/technologies/partner-sites?hl=ja"
+      target="_blank"
+      rel="noopener noreferrer">
+      Googleのサービスを使用するサイトやアプリから収集した情報の使用
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://policies.google.com/privacy?hl=ja"
+      target="_blank"
+      rel="noopener noreferrer">
+      Googleプライバシーポリシー
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Google Analytics利用規約
+    </a>
+  </li>
+</ul>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-cookie-bite"></i>
+  Cookieについて
+</h2>
+
+<p>
+Cookieは、利用者がブラウザの設定を変更することで無効にできます。
+</p>
+
+<p>
+また、Googleが提供する
+<a
+  href="https://tools.google.com/dlpage/gaoptout?hl=ja"
+  target="_blank"
+  rel="noopener noreferrer">
+  Google Analyticsオプトアウトアドオン
+</a>
+を利用することで、Google Analyticsによる情報収集を停止できます。
+</p>
+
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-envelope"></i>
+  お問い合わせで取得する情報について
+</h2>
+
+<p>
+当コミュニティは、お問い合わせフォームなどを通じて、
+氏名、メールアドレス、お問い合わせ内容などの情報を取得する場合があります。
+</p>
+
+<p>
+取得した情報は、お問い合わせへの回答や必要な連絡のために使用し、
+法令に基づく場合を除き、本人の同意なく第三者へ提供しません。
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  外部サービスへのリンクについて
+</h2>
+
+<p>
+当ウェブサイトには、connpass、X、Googleフォームなどの
+外部サービスへのリンクが含まれています。
+</p>
+
+<p>
+外部サービスにおける情報の取り扱いについては、
+それぞれのサービスが定めるプライバシーポリシーをご確認ください。
+</p>
+
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-pen-to-square"></i>
+  プライバシーポリシーの変更
+</h2>
+
+<p>
+当コミュニティは、必要に応じて本プライバシーポリシーを変更することがあります。
+</p>
+
+<p>
+変更後の内容は、当ウェブサイトに掲載した時点から適用されます。
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>
+  <i class="fa-solid fa-circle-question"></i>
+  お問い合わせ
+</h2>
+
+<p>
+本プライバシーポリシーに関するお問い合わせは、
+当ウェブサイトの
+<a href="../index.html#contact">お問い合わせフォーム</a>
+よりご連絡ください。
+</p>
+
+<p>制定日：2026年9月21日</p>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+
+<p class="footer-links">
+  <a href="../privacy/">プライバシーポリシー</a>
+</p>
+
+<p class="footer-copyright">
+  Copyright PyLadies Shizuoka
+  <span id="year"></span>
+</p>
+
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
+});
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+
+  const isOpen = nav.classList.contains("open");
+  toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+});
+
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+});
+</script>
+
+</body>
+</html>
