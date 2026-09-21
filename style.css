@@ -1004,10 +1004,26 @@ img {
 
 footer {
   margin-top: 0;
-  padding: 30px;
+  padding: 10px 0;
   text-align: center;
   background: #1f5fbf;
   color: #fff;
+  font-size: 0.875rem;
+}
+
+footer .footer-links,
+footer .footer-copyright {
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* =========================================================
