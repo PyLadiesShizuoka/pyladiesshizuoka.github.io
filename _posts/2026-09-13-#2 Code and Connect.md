@@ -15,7 +15,7 @@ date: 2026-09-14
 ![サムネイル](/images/blog/913codeconnect1.jpg)
 <br><br>
 ---
-- [Code and Connectとは？](#about)
+- [Code & Connectとは？](#about)
 - [当日のプログラム](#program)
 - [自己紹介・取り組み発表](#introduction)
 - [もくもく会](#mokumoku)
@@ -26,7 +26,7 @@ date: 2026-09-14
 
 ---
 
-## Welcome Dayとは？
+## Code & Connectとは？
 {: #about}
 「Code & Connect」には、PythonをはじめとするITに取り組む時間を過ごしながら、参加者同士でもつながっていきたい、という思いを込めています。
 
