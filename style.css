@@ -1582,3 +1582,9 @@ footer {
   }
 }
 
+/* 二重下線 */
+.double-underline {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-underline-offset: 3px;
+}
