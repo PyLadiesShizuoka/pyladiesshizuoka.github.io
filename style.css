@@ -1616,3 +1616,37 @@ footer .footer-links a:hover {
 .blog-card .new-label {
   margin-right: 8px;
 }
+
+/* フッター表示の最終調整 */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+footer p {
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #fff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-weight: 700;
+}
+
+footer a:hover,
+footer a:focus {
+  opacity: 0.8;
+}
+
+footer .footer-copyright {
+  color: #fff;
+  font-weight: 700;
+}
