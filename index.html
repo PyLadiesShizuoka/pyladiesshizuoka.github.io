@@ -22,21 +22,19 @@ permalink: /
       <a href="{{ '/blog/' | relative_url }}">もっと見る</a>
     </div>
 
-    <ul class="latest-news-list">
-      {% for post in site.posts limit:2 %}
-  　　　<li>
-    　　　<time>{{ post.date | date: "%Y.%m.%d" }}</time>
-
-    　　　<span class="latest-news-content">
-     　　 {% if forloop.first %}
-       　　 <span class="new-label">NEW!</span>
-    　　  {% endif %}
-
-     　 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-   　　 </span>
-  　　</li>
-　　　{% endfor %}
-    </ul>
+<ul class="latest-news-list">
+  {% for post in site.posts limit:2 %}
+    <li>
+      <time>{{ post.date | date: "%Y.%m.%d" }}</time>
+      <span class="latest-news-content">
+        {% if forloop.first %}
+          <span class="new-label">NEW!</span>
+        {% endif %}
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </span>
+    </li>
+  {% endfor %}
+</ul>
   </div>
 </section>
 
