@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "PyLadies Shizuoka #2 開催まであと少しです！"
+title: "PyLadies Shizuoka #2 開催まであと少しです"
 date: 2026-09-10
 ---
 
 2026年9月13日（日）開催の  
-**「PyLadies Shizuoka #2 Code & Connect」**まで、あと少しとなりました！🐍✨
+**「PyLadies Shizuoka #2 Code & Connect」**まで、あと少しとなりました🐍✨
 <br>
 参加者の皆さまへ、当日の持ち物や会場についてのリマインドメールをお送りしました📩 <br>
 お申し込みいただいている方は、メールをご確認ください。<br>
