@@ -4,7 +4,7 @@ title: "静岡のPythonコミュニティ合同合宿「ShizuHack 2026」が開�
 date: 2026-09-01
 ---
 
-静岡のPythonコミュニティ合同合宿  [**「ShizuHack 2026」**](https://pycon-shizu.connpass.com/event/405045/)が開催されます！🐍✨
+静岡のPythonコミュニティ合同合宿  [**「ShizuHack 2026」**](https://pycon-shizu.connpass.com/event/405045/)が開催されます🐍✨
 <br><br>
 
 今回は、修善寺にあるキャンプ場「キャンプベアード」に集まり、<br>
