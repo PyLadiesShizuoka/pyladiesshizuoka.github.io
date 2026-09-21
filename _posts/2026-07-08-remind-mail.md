@@ -2,9 +2,6 @@
 layout: post
 title: "参加者の皆さんへリマインドメールをお送りしました"
 date: 2026-07-08
-categories: blog
-tags:
-  - Welcome Day
 ---
 
 Welcome Day開催まであと少しとなりました。
