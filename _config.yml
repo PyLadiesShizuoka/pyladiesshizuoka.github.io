@@ -10,3 +10,5 @@ lang: ja
 
 include:
   - events.json
+
+google_analytics: G-30T6N0VCBP
