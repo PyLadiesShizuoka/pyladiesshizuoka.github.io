@@ -45,6 +45,7 @@ permalink: /blog/
     </div>
 
     <div class="blog-month-list">
+      {% assign latest_post = site.posts.first %}
       {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
       {% for year in posts_by_year %}
         {% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%m'" %}
@@ -55,11 +56,16 @@ permalink: /blog/
             <div class="blog-list">
               {% for post in month.items %}
                 <article class="blog-card">
-                  <a href="{{ post.url | relative_url }}">
-                    <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
-                    <span class="blog-title">{{ post.title }}</span>
-                  </a>
-                </article>
+  <a href="{{ post.url | relative_url }}">
+    <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+
+    {% if post.url == latest_post.url %}
+      <span class="new-label">NEW!</span>
+    {% endif %}
+
+    <span class="blog-title">{{ post.title }}</span>
+  </a>
+</article>
               {% endfor %}
             </div>
           </section>
