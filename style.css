@@ -309,6 +309,8 @@ img {
 .latest-news-inner,
 .next-event-inner {
   max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .latest-news-heading,
@@ -353,6 +355,7 @@ img {
 }
 
 .latest-news-list {
+  width: 100%;
   margin: 0;
   padding: 18px 22px;
   list-style: none;
@@ -392,11 +395,12 @@ img {
 }
 
 .next-event {
-  padding: 36px 0 56px;
+  padding: 24px 0 56px;
 }
 
 .featured-event-card {
   display: block;
+  width: 100%;
   margin: 0;
   padding: 18px 22px;
   background: #fff;
@@ -405,7 +409,7 @@ img {
   border: 1px solid rgba(31, 95, 191, 0.16);
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(31, 95, 191, 0.06);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 .featured-event-card:hover {
@@ -416,14 +420,14 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #e65425;
   font-size: 14px;
   font-weight: 700;
 }
 
 .featured-event-source img {
-  width: 26px;
+  width: 24px;
   height: auto;
   display: block;
 }
@@ -431,7 +435,7 @@ img {
 .featured-event-title {
   margin-bottom: 6px;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   transition: color 0.2s ease;
@@ -445,6 +449,23 @@ img {
   color: #666;
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* 古いイベントHTMLの日付・場所にも対応 */
+.featured-event-date,
+.featured-event-place {
+  display: inline;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.featured-event-place::before {
+  content: " / ";
+}
+
+.featured-event-button {
+  display: none;
 }
 
 /* =========================================================
@@ -1008,26 +1029,99 @@ footer {
   text-align: center;
   background: #1f5fbf;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
+  font-weight: 700;
 }
 
+footer p,
 footer .footer-links,
 footer .footer-copyright {
   margin: 2px 0;
   line-height: 1.4;
 }
 
-footer .footer-links a {
-  color: #fff;
-  text-decoration: none;
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #fff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-weight: 400;
 }
 
-footer .footer-links a:hover {
-  text-decoration: underline;
+footer a:hover,
+footer a:focus {
+  opacity: 0.8;
+}
+
+footer .footer-copyright {
+  color: #fff;
+  font-weight: 700;
 }
 
 /* =========================================================
-   13. Responsive
+   13. Page-specific Sections / Utilities
+   ========================================================= */
+
+/* トップページの背景色を交互に配置 */
+.latest-news,
+#about,
+#blog-preview,
+#social {
+  background: #f7fbff;
+}
+
+.next-event,
+#community,
+#network,
+#contact {
+  background: #eef4ff;
+}
+
+.contact-heading h2 {
+  color: #1f5fbf;
+  text-align: left;
+}
+
+.contact-heading h2 span {
+  margin-left: 10px;
+  color: #5a6f95;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+}
+
+.contact-lead {
+  margin: 0 0 24px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.double-underline {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-underline-offset: 3px;
+}
+
+.new-label {
+  flex-shrink: 0;
+  color: #e60012 !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.blog-card .new-label {
+  margin-right: 8px;
+}
+
+/* =========================================================
+   14. Responsive
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -1248,7 +1342,7 @@ footer .footer-links a:hover {
   }
 
   .next-event {
-    padding: 28px 0 44px;
+    padding: 24px 0 44px;
   }
 
   .latest-news-heading,
@@ -1264,7 +1358,8 @@ footer .footer-links a:hover {
   }
 
   .latest-news-heading h2 span,
-  .next-event-heading h2 span {
+  .next-event-heading h2 span,
+  .contact-heading h2 span {
     display: inline-block;
     margin-left: 6px;
     font-size: 12px;
@@ -1391,262 +1486,4 @@ footer .footer-links a:hover {
   footer {
     padding: 24px 16px;
   }
-}
-
-/* =========================================================
-   14. Final Layout Adjustments
-   - Section alternation
-   - Latest News / Next Event alignment
-   - Contact section
-   ========================================================= */
-
-/* Section color order on top page:
-   Hero / Latest News: light
-   Next Event: alt
-   About: light
-   Community: alt
-   Blog: light
-   Network: alt
-   Social: light
-   Contact: alt
-*/
-.latest-news,
-#about,
-#blog-preview,
-#social {
-  background: #f7fbff;
-}
-
-.next-event,
-#community,
-#network,
-#contact {
-  background: #eef4ff;
-}
-
-/* Keep latest news and next event perfectly aligned */
-.latest-news-inner,
-.next-event-inner {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Make latest news and next event headings the same scale */
-.latest-news-heading,
-.next-event-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 12px;
-}
-
-.latest-news-heading h2,
-.next-event-heading h2 {
-  margin: 0;
-  color: #1f5fbf;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.latest-news-heading h2 span,
-.next-event-heading h2 span {
-  margin-left: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #5a6f95;
-  letter-spacing: 0.08em;
-  vertical-align: middle;
-}
-
-/* Make the two cards the same width and visual weight */
-.latest-news-list,
-.featured-event-card {
-  width: 100%;
-  margin: 0;
-  padding: 18px 22px;
-  background: #fff;
-  border: 1px solid rgba(31, 95, 191, 0.16);
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(31, 95, 191, 0.06);
-}
-
-/* Next event should be compact, close to latest-news card */
-.next-event {
-  padding: 24px 0 56px;
-}
-
-.featured-event-card {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  transition: border-color 0.2s ease;
-}
-
-.featured-event-card:hover {
-  border-color: rgba(31, 95, 191, 0.28);
-}
-
-.featured-event-source {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-  color: #e65425;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.featured-event-source img {
-  width: 24px;
-  height: auto;
-  display: block;
-}
-
-.featured-event-title {
-  margin-bottom: 6px;
-  color: #333;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  transition: color 0.2s ease;
-}
-
-.featured-event-card:hover .featured-event-title {
-  color: #1f5fbf;
-}
-
-.featured-event-meta {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-/* If older HTML still has date/place as separate elements, show them on one line. */
-.featured-event-date,
-.featured-event-place {
-  display: inline;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.featured-event-place::before {
-  content: " / ";
-}
-
-/* If older HTML still has a button, hide it because the event title/card is the link. */
-.featured-event-button {
-  display: none;
-}
-
-/* Contact */
-.contact-heading h2 {
-  color: #1f5fbf;
-  text-align: left;
-}
-
-.contact-heading h2 span {
-  margin-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #5a6f95;
-  letter-spacing: 0.08em;
-  vertical-align: middle;
-}
-
-.contact-lead {
-  text-align: left;
-  margin: 0 0 24px;
-  line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-  .latest-news-heading,
-  .next-event-heading {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .latest-news-heading h2,
-  .next-event-heading h2 {
-    font-size: 20px;
-  }
-
-  .latest-news-heading h2 span,
-  .next-event-heading h2 span,
-  .contact-heading h2 span {
-    display: inline-block;
-    margin-left: 6px;
-    font-size: 12px;
-  }
-
-  .latest-news-list,
-  .featured-event-card {
-    padding: 16px;
-  }
-
-  .next-event {
-    padding: 24px 0 44px;
-  }
-
-  .featured-event-title {
-    font-size: 16px;
-  }
-}
-
-/* 二重下線 */
-.double-underline {
-  text-decoration-line: underline;
-  text-decoration-style: double;
-  text-underline-offset: 3px;
-}
-
-/* 最新記事のNEW表示 */
-.new-label {
-  flex-shrink: 0;
-  color: #e60012 !important;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.blog-card .new-label {
-  margin-right: 8px;
-}
-
-/* フッター表示の最終調整 */
-footer {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-footer p {
-  margin: 2px 0;
-  line-height: 1.4;
-}
-
-footer a,
-footer a:link,
-footer a:visited,
-footer a:hover,
-footer a:focus,
-footer a:active {
-  color: #fff !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  font-weight: 700;
-}
-
-footer a:hover,
-footer a:focus {
-  opacity: 0.8;
-}
-
-footer .footer-copyright {
-  color: #fff;
-  font-weight: 400;
 }
