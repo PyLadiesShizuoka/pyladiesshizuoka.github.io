@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* 固定ヘッダーにページ内リンク先が隠れないようにする */
+  scroll-padding-top: 80px;
 }
 
 *,
@@ -663,10 +665,6 @@ img {
 .blog-actions {
   margin-top: 28px;
   text-align: center;
-}
-
-.post-content h2[id] {
-  scroll-margin-top: 50px;
 }
 
 /* =========================================================
