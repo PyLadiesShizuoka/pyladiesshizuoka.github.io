@@ -1594,11 +1594,12 @@ footer {
   display: inline-flex;
   align-items: baseline;
   gap: 8px;
+  min-width: 0;
 }
 
-.new-label {
+.latest-news-list .new-label {
   flex-shrink: 0;
-  color: #e60012;
+  color: #e60012 !important;
   font-size: 12px;
   font-weight: 700;
 }
