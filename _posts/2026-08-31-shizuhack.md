@@ -18,7 +18,7 @@ date: 2026-09-01
 静岡のPythonコミュニティで交流したい方、キャンプやもくもく会に興味のある方は<br>
 ぜひチェックしてみてください😊<br>
 <br>
-<u>※なお、こちらはPyLadies Shizuoka主催のイベントではなく、**性別を問わず参加できるイベント**です。</u><br><br>
+※なお、こちらはPyLadies Shizuoka主催のイベントではなく、<span class="double-underline">性別を問わず参加できるイベントです。</span><br><br>
 
 
 ## 開催概要
