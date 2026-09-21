@@ -1589,17 +1589,14 @@ footer {
   text-underline-offset: 3px;
 }
 
-/* 更新履歴の最新記事 */
-.latest-news-content {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 8px;
-  min-width: 0;
-}
-
-.latest-news-list .new-label {
+/* 最新記事のNEW表示 */
+.new-label {
   flex-shrink: 0;
   color: #e60012 !important;
   font-size: 12px;
   font-weight: 700;
+}
+
+.blog-card .new-label {
+  margin-right: 8px;
 }
