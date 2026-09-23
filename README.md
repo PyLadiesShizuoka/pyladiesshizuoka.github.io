@@ -26,11 +26,23 @@ Pythonを学び始めた方から経験者まで、交流や学習を通じて�
 
 WordPressなどの管理画面型CMSは使用せず、HTMLとCSSを中心にサイトを制作・運営しています。
 
+### Google Analytics
+
+`_includes/google-analytics.html`でGA4の計測コードを管理しています。
+
+### 共通レイアウト
+
+`_layouts/default.html`で、通常ページに共通する構造を管理しています。
+
+### ブログ記事のレイアウト
+
+`_layouts/post.html`で、ブログ記事の表示形式を管理しています。
+
 ## 主なフォルダとファイル
 
 ```text
-├─ _includes/       ヘッダーやフッターなどの共通部品
-├─ _layouts/        ページ全体のレイアウト
+├─ _includes/       Google Analyticsなどの共通部品
+├─ _layouts/        通常ページ・ブログ記事の共通レイアウト
 ├─ _posts/          ブログ記事
 ├─ blog/            ブログ一覧ページ
 ├─ coc/             Code of Conduct
