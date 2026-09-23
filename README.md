@@ -10,7 +10,8 @@ https://shizuoka.pyladies.com/
 
 ## PyLadies Shizuokaについて
 
-PyLadies Shizuokaは、静岡県を中心に活動する、女性およびジェンダーマイノリティを対象としたPythonコミュニティです。
+PyLadies Shizuokaは、静岡県を中心に活動する、女性およびジェンダーマイノリティを
+対象としたPythonコミュニティです。
 
 Pythonを学び始めた方から経験者まで、交流や学習を通じてつながれる場を目指しています。
 
@@ -27,7 +28,8 @@ Pythonを学び始めた方から経験者まで、交流や学習を通じて�
 - Google Analytics 4
 - Font Awesome
 
-HTMLとCSSを中心に、GitHub PagesとJekyllを利用して制作・運営しています。メニューの開閉やヘッダーの表示など、一部にJavaScriptを使用しています。
+HTMLとCSSを中心に、GitHub PagesとJekyllを利用して制作・運営しています。
+メニューの開閉やヘッダーの表示など、一部にJavaScriptを使用しています。
 
 ## 主なフォルダとファイル
 
@@ -59,7 +61,8 @@ HTMLとCSSを中心に、GitHub PagesとJekyllを利用して制作・運営し�
 - フッター
 - コピーライト年、ヘッダー表示、メニュー開閉のJavaScript
 
-ブログ記事では、`_posts`の記事本文を`_layouts/post.html`で整え、さらに`_layouts/default.html`へ組み込んで表示します。
+ブログ記事では、`_posts`の記事本文を`_layouts/post.html`で整え、
+更に`_layouts/default.html`へ組み込んで表示します。
 
 ```text
 _postsの記事
@@ -71,7 +74,8 @@ _layouts/default.html
 完成したブログページ
 ```
 
-Google Analyticsの計測コードは、`_includes/google-analytics.html`から`_layouts/default.html`へ読み込んでいます。
+Google Analyticsの計測コードは、`_includes/google-analytics.html`から
+`_layouts/default.html`へ読み込んでいます。
 
 ## 主な更新箇所
 
@@ -83,7 +87,8 @@ Google Analyticsの計測コードは、`_includes/google-analytics.html`から`
 
 `_posts`フォルダにMarkdown形式で記事を追加します。
 
-ブログ記事では、タイトル、投稿日、本文のほか、必要に応じて記事画像を設定します。記事画像が設定されている場合は、OGPとXの共有画像にも使用されます。
+ブログ記事では、タイトル、投稿日、本文のほか、必要に応じて記事画像を設定します。
+記事画像が設定されている場合は、OGPとXの共有画像にも使用されます。
 
 ### ブログ記事の表示
 
@@ -101,7 +106,8 @@ Google Analyticsの計測コードは、`_includes/google-analytics.html`から`
 
 `_layouts/default.html`を編集します。
 
-このファイルの変更はサイト内の複数ページに反映されるため、編集時はトップページ、ブログ、Code of Conduct、プライバシーポリシーなどの表示を確認します。
+このファイルの変更はサイト内の複数ページに反映されるため、
+編集時はトップページ、ブログ、Code of Conduct、プライバシーポリシーなどの表示を確認します。
 
 ### サイトのデザイン
 
