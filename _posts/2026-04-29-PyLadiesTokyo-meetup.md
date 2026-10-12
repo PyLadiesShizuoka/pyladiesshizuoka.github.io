@@ -12,7 +12,8 @@ PyLadies Shizuokaの初回イベント準備の参考にするため、2026年4�
 また、PyLadies SlackでLT枠にもお誘いいただき、思いがけずPyLadies Shizuokaの立ち上げについてお話しする機会もいただきました。立ち上げの経緯や活動予定などを紹介させていただき、とても貴重な経験になりました。
 
 ![PyLadies Tokyo入学式でのLT](/images/blog/20260427slide.png)
-
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br><br>
 ## 特に参考になったこと
 
 - 会場が分からない参加者への連絡方法
