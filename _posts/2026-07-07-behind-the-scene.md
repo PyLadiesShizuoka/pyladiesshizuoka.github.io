@@ -2,10 +2,6 @@
 layout: post
 title: "Welcome Day開催まであと少し！運営の裏側をご紹介します"
 date: 2026-07-07
-categories: blog
-tags:
-  - 運営
-  - Welcome Day
 ---
 
 Welcome Day開催まであと少しとなりました。
