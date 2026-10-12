@@ -9,6 +9,8 @@ date: 2026-04-03
 [connpassページ](https://pyladies-shizuoka.connpass.com/)もあるので、静岡の女性Pythonistaの（= Python利用者）みなさん、ご参加お待ちしております。
 
 ![PyLadies Shizuoka ロゴ](/images/pyladies_shizuoka.png)
+<p style="text-align: center;">※画像をクリックすると拡大表示できます。</p>
+<br><br>
 
 ## PyLadies Shizuoka とは
 
