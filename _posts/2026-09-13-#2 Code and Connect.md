@@ -13,6 +13,7 @@ date: 2026-09-14
 
 
 ![サムネイル](/images/blog/913codeconnect1.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br><br>
 ---
 - [Code & Connectとは？](#about)
@@ -71,6 +72,7 @@ date: 2026-09-14
 もくもく会では、それぞれが決めたテーマに沿って、Pythonの学習や制作を進めました。
 
 ![もくもく会の様子](/images/blog/913codeconnect2.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br><br>
 少人数だったこともあり、集中して作業しながら、分からないところがあれば気軽に相談できる雰囲気になりました。
 中には、初回イベントで行ったPythonハンズオンの内容を復習する方もいらっしゃいました。
@@ -82,6 +84,7 @@ date: 2026-09-14
 余ったお菓子は、最後に皆さんで分けてお持ち帰りいただきました😊
 <br><br>
 ![当日用意したお菓子](/images/blog/913codeconnect4.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br>
 
 ---
@@ -118,6 +121,7 @@ PyLadies Shizuokaとして2回目となるイベントは、少人数ながら�
 ご参加いただいた皆さま、本当にありがとうございました！
 <br><br>
 ![イベント終了後の集合写真](/images/blog/913codeconnect5.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br>
 
 ---
