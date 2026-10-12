@@ -2,12 +2,6 @@
 layout: post
 title: "PyLadies Shizuoka Meetup #1 Welcome Day を開催しました！"
 date: 2026-07-12
-categories: blog
-tags:
-  - Event
-  - Welcome Day
-  - Meetup
-  - Python
 ---
 
 2026年7月11日（土）、静岡市コ・クリエーションスペースにて、**PyLadies Shizuoka Meetup #1 Welcome Day** を開催しました。
@@ -17,6 +11,8 @@ PyLadies Shizuokaとして初めてのイベントでしたが、多くの方に
 ご参加いただいた皆さま、本当にありがとうございました！
 
 ![サムネイル](/images/blog/711welcomeday1.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 - [Welcome Dayとは？](#about)
@@ -60,6 +56,8 @@ Welcome Dayは、PyLadies Shizuokaの初回イベントで、「初めまして�
 自己紹介では、参加したきっかけやPythonを始めた理由などをお話しいただき、会場の緊張も少しずつほぐれていきました。
 
 ![サムネイル](/images/blog/711welcomeday4.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 
@@ -82,6 +80,8 @@ Welcome Dayは、PyLadies Shizuokaの初回イベントで、「初めまして�
 と様々な声が聞かれ、楽しみながら学んでいただけたようです。
 
 ![サムネイル](/images/blog/711welcomeday5.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 
@@ -93,6 +93,8 @@ LTでは、Pythonのライブラリ「デコレータ (decorator)」学習に関
 関数やクラスの中身を書き換えずに処理を追加する「デコレータ (decorator)」の使用例や、経験を共有できる時間となりました。
 
 ![サムネイル](/images/blog/711welcomeday7.jpg)![サムネイル](/images/blog/711welcomeday9.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 
@@ -113,6 +115,8 @@ Pythonのことだけでなく、
 初対面同士とは思えないほど自然に会話が弾み、とても温かい時間になりました。
 
 ![サムネイル](/images/blog/711welcomeday10.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 
@@ -142,6 +146,8 @@ Pythonのことだけでなく、
 PyLadies Shizuokaが目指している「安心して学び、つながれる場所」の第一歩を踏み出せたように感じています。
 
 ![サムネイル](/images/blog/711welcomeday8.jpg)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 ---
 
