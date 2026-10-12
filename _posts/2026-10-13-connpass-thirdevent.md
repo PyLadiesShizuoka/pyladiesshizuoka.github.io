@@ -9,7 +9,7 @@ connpassにて、3回目のイベントとなる「[PyLadies Shizuoka Meetup #3 
 <p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br>
 
-今回は、PyLadies Shizuokaのコミュニティ運営をちょっと覗いてみる「スタッフ作業日」を開催します！
+今回は、PyLadies Shizuokaのコミュニティ運営をちょっと覗いてみる「スタッフ作業日」をオンラインで開催します！
 
 - 「コミュニティ運営って何をしているの？」
 - 「イベントを作るところを見てみたい」
