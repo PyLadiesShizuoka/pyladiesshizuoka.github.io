@@ -7,6 +7,8 @@ date: 2026-08-13
 connpassにて、2回目のイベントとなる「[PyLadies Shizuoka Meetup #2 Code & Connect](https://pyladies-shizuoka.connpass.com/event/401156/)」を公開しました。
 
 ![event0913](/images/blog/event0913.png)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 今回は「Pythonに関する学習や作業を中心としたもくもく会」です。気軽に参加していただけるよう、学習や作業内容はITに関連する内容であれば、Python以外の学習や作業でもOK！です。
 <br>
