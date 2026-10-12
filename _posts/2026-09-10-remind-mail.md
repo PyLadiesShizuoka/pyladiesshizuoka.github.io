@@ -11,6 +11,7 @@ date: 2026-09-10
 お申し込みいただいている方は、メールをご確認ください。<br>
 
 ![サムネイル](/images/blog/event0913.png)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
 <br>
 ## 当日の内容
 
