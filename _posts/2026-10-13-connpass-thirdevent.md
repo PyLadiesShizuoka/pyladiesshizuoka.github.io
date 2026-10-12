@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "第三回イベントを公開しました！"
-date: 2026-10-13
+date: 2026-10-12
 ---
 connpassにて、3回目のイベントとなる「[PyLadies Shizuoka Meetup #3 スタッフ作業日](https://pyladies-shizuoka.connpass.com/event/408134/)」を公開しました。
 
