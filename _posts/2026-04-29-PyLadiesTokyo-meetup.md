@@ -28,6 +28,8 @@ PyLadies Shizuokaの初回イベント準備の参考にするため、2026年4�
 運営の細かな工夫については、懇親会の時間にスタッフの皆さんへ直接お話を伺うこともできました。実際に運営されている方々のお話はとても参考になり、多くの学びを得ることができました。
 
 ![PyLadies Tokyo入学式の様子](/images/blog/20260427.png)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br>
 
 改めまして、運営してくださった [PyLadies Tokyo](https://pyladies-tokyo.connpass.com/) の皆さま、ありがとうございました。
 
