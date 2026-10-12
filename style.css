@@ -1489,3 +1489,51 @@ footer .footer-copyright {
     padding: 24px 16px;
   }
 }
+
+/* 15. ブログ画像のライトボックス */
+.blog-lightbox-trigger { cursor: zoom-in; }
+.blog-lightbox-trigger:focus-visible { outline: 3px solid #1f5fbf; outline-offset: 4px; }
+.blog-lightbox {
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 64px 16px 24px;
+  border: 0;
+  background: transparent;
+  overflow: auto;
+}
+.blog-lightbox[open] { display: flex; align-items: center; justify-content: center; }
+.blog-lightbox::backdrop { background: rgba(0, 0, 0, 0.85); }
+.blog-lightbox .blog-lightbox-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #fff;
+}
+.blog-lightbox-close {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  background: #222;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+.blog-lightbox-close:focus-visible { outline: 3px solid #ffb6d5; outline-offset: 4px; }
