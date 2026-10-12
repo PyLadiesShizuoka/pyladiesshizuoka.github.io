@@ -9,7 +9,8 @@ PyLadies Shizuokaでは、現在第1回イベントの開催に向けて準備�
 会場は静岡市の [コ・クリエーションスペース](https://coc-shizuoka.jp/) を利用する予定です。
 
 ![静岡市コ・クリエーションスペース](/images/blog/co-creationspace.png)
-
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br><br>
 
 
 静岡市の施設を利用するため事前申請が必要なのですが、施設の利用条件として、いわゆる「もくもく会」のみのイベントは認められていないことが分かりました。
