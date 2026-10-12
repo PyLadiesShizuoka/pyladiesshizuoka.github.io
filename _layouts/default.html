@@ -165,5 +165,56 @@ if (toggle && nav) {
   });
 }
 </script>
+<!-- ブログ画像の拡大表示 -->
+<dialog id="blog-lightbox" class="blog-lightbox" aria-label="画像の拡大表示">
+  <button type="button" class="blog-lightbox-close" aria-label="拡大画像を閉じる" autofocus>×</button>
+  <img class="blog-lightbox-image" alt="">
+</dialog>
+<script>
+(() => {
+  const dialog = document.getElementById('blog-lightbox');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const enlarged = dialog.querySelector('.blog-lightbox-image');
+  let opener;
+  let previousOverflow;
+  document.querySelectorAll('.blog-article-content img, .blog-article-thumb img').forEach(img => {
+    if (img.hasAttribute('data-no-lightbox')) return;
+    let trigger = img.closest('a');
+    if (trigger) {
+      const destination = new URL(trigger.href, document.baseURI);
+      // イベント申込など、画像以外へのリンクはそのまま残します。
+      if (!/\.(png|jpe?g|gif|webp|avif|svg)$/i.test(destination.pathname)) return;
+    } else {
+      trigger = document.createElement('a');
+      trigger.href = img.currentSrc || img.src;
+      img.before(trigger);
+      trigger.append(img);
+    }
+    trigger.classList.add('blog-lightbox-trigger');
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.setAttribute('aria-label', (img.alt || '画像') + 'を拡大表示');
+    trigger.addEventListener('click', event => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      opener = trigger;
+      enlarged.src = trigger.href;
+      enlarged.alt = img.alt || '拡大画像';
+      previousOverflow = document.body.style.overflow;
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  dialog.querySelector('button').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    document.body.style.overflow = previousOverflow;
+    enlarged.removeAttribute('src');
+    if (opener) opener.focus({ preventScroll: true });
+  });
+})();
+</script>
+
 </body>
 </html>
