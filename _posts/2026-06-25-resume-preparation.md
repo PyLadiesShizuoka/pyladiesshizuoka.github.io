@@ -2,11 +2,6 @@
 layout: post
 title: "Welcome Dayに向けてハンズオン資料を準備しました"
 date: 2026-06-25
-categories: blog
-tags:
-  - Welcome Day
-  - Python
-  - ハンズオン
 ---
 
 Welcome Dayでは、Pythonが初めての方や、久しぶりにPythonに触れる方にも安心して参加していただけるよう、ハンズオン資料の準備を進めてきました。
