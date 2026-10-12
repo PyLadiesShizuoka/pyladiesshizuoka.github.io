@@ -28,6 +28,8 @@ Welcome Dayでは、Pythonが初めての方や、久しぶりにPythonに触れ
 まで学べる追加資料も作成してくださいました。
 
 ![Colabのみで初心者向けPythonハンズオン](/images/blog/711resume.png)
+<p style="text-align: center; font-size: 0.85em;">※画像をクリックすると拡大表示できます。</p>
+<br><br>
 
 「イベントで終わり」ではなく、その後も自分のペースで学習を続けられる内容になっています。
 
