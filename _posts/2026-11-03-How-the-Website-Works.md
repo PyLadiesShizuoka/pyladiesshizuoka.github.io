@@ -94,11 +94,6 @@ PyLadies Shizuokaでは、ブログ記事の追加やWebサイトの修正など
 
 **PyLadies Shizuoka Meetup #3**
 
-イベント詳細・お申し込みはこちら：
-
-https://pyladies-shizuoka.connpass.com/event/408134/
-
-
 **[▶ イベントのお申し込みはこちら（connpass）](https://pyladies-shizuoka.connpass.com/event/408134/)**
 
 ---
