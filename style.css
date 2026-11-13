@@ -773,6 +773,33 @@ img {
   padding-bottom: 8px;
 }
 
+/* ブログ本文のMarkdown表だけに枠線を付ける */
+.blog-article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.blog-article-content th,
+.blog-article-content td {
+  border: 1px solid #cbd8ec;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.blog-article-content th {
+  background: #eef4ff;
+  color: #1f5fbf;
+  font-weight: 700;
+}
+
+.blog-article-content tr:nth-child(even) td {
+  background: #f8fbff;
+}
+
 .blog-article-content img {
   display: block;
   max-width: 360px;
@@ -1445,6 +1472,16 @@ footer .footer-copyright {
 
   .blog-article h1 {
     font-size: 26px;
+  }
+
+  /* スマートフォンでは表の文字と余白を少し小さくする */
+  .blog-article-content table {
+    font-size: 13px;
+  }
+
+  .blog-article-content th,
+  .blog-article-content td {
+    padding: 8px;
   }
 
   .blog-article-content img,
