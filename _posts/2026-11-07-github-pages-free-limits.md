@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitHub Pagesって何回更新しても無料なの？気になったので調べてみました！①"
+title: "GitHub Pagesって何回更新しても無料なの？気になったので調べてみました！"
 date: 2026-11-07
 ---
 こんにちは、PyLadies Shizuokaです！
